@@ -1,0 +1,110 @@
+{
+  "Cmp": {
+    "Color": {
+      "Forms": {
+        "DataPicker": {
+          "Row": {
+            "Unselected": {
+              "Content": {
+                "Value": {
+                  "value": "{Sem.Color.Content.Tertiary}",
+                  "type": "color"
+                }
+              }
+            },
+            "Selected": {
+              "Surface": {
+                "value": "{Sem.Color.Fill.Selected.Subtle}",
+                "type": "color"
+              },
+              "Content": {
+                "Value": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Unit": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Icon": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "Content": {
+            "Label": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Forms": {
+        "DataPicker": {
+          "Label": {
+            "value": "{Sem.Typography.Label.Order1.Normal}",
+            "type": "typography"
+          },
+          "Row": {
+            "Value": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            },
+            "Unit": {
+              "value": "{Sem.Typography.Label.Order2.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Forms": {
+        "DataPicker": {
+          "Row": {
+            "Selected": {
+              "Surface": {
+                "Default": {
+                  "value": "{Sem.BorderRadius.Form.Control}",
+                  "type": "borderRadius"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "DataPicker": {
+          "Row": {
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.1400}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Forms": {
+        "DataPicker": {
+          "TouchTarget": {
+            "MinWidth": {
+              "value": "{Sem.Size.TouchTarget.MD}",
+              "type": "sizing"
+            },
+            "Height": {
+              "value": "{Sem.Size.TouchTarget.MD}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

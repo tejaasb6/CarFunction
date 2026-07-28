@@ -1,0 +1,102 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "BarGraph": {
+          "TrainLine": {
+            "Default": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Tertiary}",
+                "type": "color"
+              }
+            },
+            "Critical": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Critical}",
+                "type": "color"
+              }
+            },
+            "Temperature": {
+              "Fill": {
+                "value": "{Sem.Gradient.Graph.Temperature}",
+                "type": "color"
+              }
+            },
+            "Charging": {
+              "Fill": {
+                "value": "{Sem.Color.Graph.Charging}",
+                "type": "color"
+              }
+            }
+          },
+          "TrackLine": {
+            "Fill": {
+              "value": "{Sem.Color.Content.Quaternary}",
+              "type": "color"
+            }
+          },
+          "Content": {
+            "Label": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "DataDisplay": {
+        "BarGraph": {
+          "Label": {
+            "value": "{Sem.Typography.Label.Order2.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Space": {
+      "DataDisplay": {
+        "BarGraph": {
+          "Surface": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.150}",
+              "type": "spacing"
+            }
+          },
+          "Value": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.150}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "DataDisplay": {
+        "BarGraph": {
+          "Charging": {
+            "Default": {
+              "value": "{Sem.Blur.MD}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "DataDisplay": {
+        "BarGraph": {
+          "Weight": {
+            "value": "{Sem.Size.Fixed.250}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}

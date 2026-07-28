@@ -1,0 +1,176 @@
+{
+  "Sem": {
+    "FontSize": {
+      "50": {
+        "value": "{Core.DimensionREM.112}",
+        "type": "fontSizes",
+        "description": "UseCase: Display.Order1"
+      },
+      "100": {
+        "value": "{Core.DimensionREM.56}",
+        "type": "fontSizes",
+        "description": "UseCase: None"
+      },
+      "200": {
+        "value": "{Core.DimensionREM.36}",
+        "type": "fontSizes",
+        "description": "UseCase: Headline.Order1; Copy.Order1; Link.Order1"
+      },
+      "300": {
+        "value": "{Core.DimensionREM.28}",
+        "type": "fontSizes",
+        "description": "UseCase: Headline.Order2; Copy.Order2; Link.Order2"
+      },
+      "400": {
+        "value": "{Core.DimensionREM.24}",
+        "type": "fontSizes",
+        "description": "UseCase: Copy.Order3; Label.Order3; Link.Order3"
+      },
+      "500": {
+        "value": "{Core.DimensionREM.20}",
+        "type": "fontSizes",
+        "description": "UseCase: Copy.Order4; Label.Order4; Link.Order4"
+      }
+    },
+    "FontWeight": {
+      "Display": {
+        "Normal": {
+          "value": "Normal",
+          "type": "fontWeights"
+        },
+        "Bold": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      },
+      "Headline": {
+        "Normal": {
+          "value": "Normal",
+          "type": "fontWeights"
+        },
+        "Bold": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      },
+      "Copy": {
+        "Normal": {
+          "value": "Normal",
+          "type": "fontWeights"
+        },
+        "Bold": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      }
+    },
+    "FontFamily": {
+      "AudiFont": {
+        "value": "Audi Type Variable, sans-serif",
+        "type": "fontFamilies"
+      },
+      "Display": {
+        "value": "{Sem.FontFamily.AudiFont}",
+        "type": "fontFamilies"
+      },
+      "Headline": {
+        "value": "{Sem.FontFamily.AudiFont}",
+        "type": "fontFamilies"
+      },
+      "Copy": {
+        "value": "{Sem.FontFamily.AudiFont}",
+        "type": "fontFamilies"
+      }
+    },
+    "LineHeight": {
+      "50": {
+        "Normal": {
+          "value": "{Core.DimensionREM.160}",
+          "type": "lineHeights",
+          "description": "UserCase: Display.Order1"
+        }
+      },
+      "100": {
+        "Normal": {
+          "value": "{Core.DimensionREM.72}",
+          "type": "lineHeights",
+          "description": "UserCase: None"
+        }
+      },
+      "200": {
+        "Normal": {
+          "value": "{Core.DimensionREM.56}",
+          "type": "lineHeights",
+          "description": "UserCase: Copy.Order1; Headline.Order1; Link.Order1"
+        },
+        "Short": {
+          "value": "{Core.DimensionREM.48}",
+          "type": "lineHeights",
+          "description": "UserCase: Label.Order1"
+        }
+      },
+      "300": {
+        "Normal": {
+          "value": "{Core.DimensionREM.44}",
+          "type": "lineHeights",
+          "description": "UseCase: Copy.Order2, Headline.Order2; Link.Order2"
+        },
+        "Short": {
+          "value": "{Core.DimensionREM.36}",
+          "type": "lineHeights",
+          "description": "UserCase: Label.Order2; Caption.Order1"
+        }
+      },
+      "400": {
+        "Normal": {
+          "value": "{Core.DimensionREM.36}",
+          "type": "lineHeights",
+          "description": "UseCase: Copy.Order3; Link.Order3"
+        },
+        "Short": {
+          "value": "{Core.DimensionREM.32}",
+          "type": "lineHeights",
+          "description": "UserCase: Label.Order3; Caption.Order2"
+        }
+      },
+      "500": {
+        "Normal": {
+          "value": "{Core.DimensionREM.28}",
+          "type": "lineHeights",
+          "description": "UserCase: Copy.Order4; Link.Order4"
+        },
+        "Short": {
+          "value": "{Core.DimensionREM.24}",
+          "type": "lineHeights",
+          "description": "UserCase: Label.Order4"
+        }
+      }
+    },
+    "LetterSpacing": {
+      "None": {
+        "value": "0px",
+        "type": "letterSpacing"
+      }
+    },
+    "Size": {
+      "UnderlineThickness": {
+        "100": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "sizing"
+        }
+      }
+    },
+    "Space": {
+      "UnderlineOffset": {
+        "100": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "spacing"
+        },
+        "200": {
+          "value": "{Core.DimensionPX.7}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}

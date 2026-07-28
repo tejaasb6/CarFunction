@@ -1,0 +1,26 @@
+{
+  "Cmp": {
+    "Space": {
+      "Action": {
+        "ButtonGroup": {
+          "Horizontal": {
+            "MD": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.200}",
+                "type": "spacing"
+              }
+            }
+          },
+          "Vertical": {
+            "MD": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.0}",
+                "type": "spacing"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

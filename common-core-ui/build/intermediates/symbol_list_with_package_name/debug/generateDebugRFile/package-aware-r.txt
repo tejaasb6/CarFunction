@@ -1,0 +1,5 @@
+com.ui.core
+drawable e71e_button_plus
+drawable e71f_button_minus
+drawable exxx_interactive_placeholder
+drawable ic_checkbox_warning

@@ -1,0 +1,140 @@
+{
+  "Cmp": {
+    "Color": {
+      "Feedback": {
+        "ProgressIndicator": {
+          "NonInverted": {
+            "Content": {
+              "Value": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Range": {
+                "value": "{Sem.Color.Content.Tertiary}",
+                "type": "color"
+              },
+              "Label": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            },
+            "TrainLine": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            },
+            "TrackLine": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Quaternary}",
+                "type": "color"
+              }
+            }
+          },
+          "Inverted": {
+            "Content": {
+              "Value": {
+                "value": "{Sem.Color.Content.PrimaryInverted}",
+                "type": "color"
+              },
+              "Range": {
+                "value": "{Sem.Color.Content.TertiaryInverted}",
+                "type": "color"
+              },
+              "Label": {
+                "value": "{Sem.Color.Content.PrimaryInverted}",
+                "type": "color"
+              }
+            },
+            "TrainLine": {
+              "Fill": {
+                "value": "{Sem.Color.Content.PrimaryInverted}",
+                "type": "color"
+              }
+            },
+            "TrackLine": {
+              "Fill": {
+                "value": "{Sem.Color.Content.QuaternaryInverted}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Feedback": {
+        "ProgressIndicator": {
+          "ProgressBar": {
+            "Label": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            },
+            "Value": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            },
+            "Range": {
+              "value": "{Sem.Typography.Label.Order2.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Feedback": {
+        "ProgressIndicator": {
+          "Spinner": {
+            "SM": {
+              "value": "{Sem.BorderWidth.MD}",
+              "type": "borderWidth"
+            },
+            "MD": {
+              "value": "{Sem.BorderWidth.LG}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Feedback": {
+        "ProgressIndicator": {
+          "ProgressBar": {
+            "LineHeight": {
+              "value": "{Sem.Size.Fixed.150}",
+              "type": "sizing"
+            }
+          },
+          "Spinner": {
+            "SM": {
+              "All": {
+                "value": "{Sem.Size.Fixed.800}",
+                "type": "sizing"
+              }
+            },
+            "MD": {
+              "All": {
+                "value": "{Sem.Size.Fixed.1200}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Feedback": {
+        "ProgressIndicator": {
+          "ProgressBar": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.100}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

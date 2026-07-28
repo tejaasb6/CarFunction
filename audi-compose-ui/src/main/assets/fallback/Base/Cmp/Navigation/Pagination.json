@@ -1,0 +1,80 @@
+{
+  "Cmp": {
+    "Color": {
+      "Navigation": {
+        "Pagination": {
+          "Content": {
+            "Label": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Active": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            },
+            "Underline": {
+              "Active": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            }
+          },
+          "Surface": {
+            "Fill": {
+              "Idle": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "Active": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              }
+            },
+            "Stroke": {
+              "Idle": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              },
+              "Active": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

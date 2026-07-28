@@ -1,0 +1,20 @@
+{
+  "Cmp": {
+    "Color": {
+      "Feedback": {
+        "LoadingLayer": {
+          "Surface": {
+            "Progress_0": {
+              "value": "{Sem.Color.Fill.Skeleton}",
+              "type": "color"
+            },
+            "Progress_100": {
+              "value": "{Sem.Color.Fill.Skeleton}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "Cmp": {
+    "Color": {
+      "Forms": {
+        "PinDisplay": {
+          "Indicator": {
+            "Surface": {
+              "Fill": {
+                "Default": {
+                  "value": "{Sem.Color.Content.Quaternary}",
+                  "type": "color"
+                },
+                "Filled": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Error": {
+                  "value": "{Sem.Color.Content.Signal.Critical}",
+                  "type": "color"
+                }
+              },
+              "Stroke": {
+                "Default": {
+                  "value": "{Sem.Color.Stroke.Bold}",
+                  "type": "color"
+                },
+                "Filled": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Error": {
+                  "value": "{Sem.Color.Content.Signal.Critical}",
+                  "type": "color"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Forms": {
+        "PinDisplay": {
+          "Indicator": {
+            "value": "{Sem.BorderRadius.Max}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Forms": {
+        "PinDisplay": {
+          "Indicator": {
+            "Default": {
+              "value": "{Sem.BorderWidth.SM}",
+              "type": "borderWidth"
+            },
+            "Filled": {
+              "value": "{Sem.BorderWidth.None}",
+              "type": "borderWidth"
+            },
+            "Error": {
+              "value": "{Sem.BorderWidth.None}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "PinDisplay": {
+          "H-Padding": {
+            "value": "{Sem.Space.Fixed.300}",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Forms": {
+        "PinDisplay": {
+          "Indicator": {
+            "Surface": {
+              "All": {
+                "value": "{Sem.Size.Fixed.800}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

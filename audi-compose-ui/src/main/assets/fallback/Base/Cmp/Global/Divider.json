@@ -1,0 +1,34 @@
+{
+  "Cmp": {
+    "Color": {
+      "Global": {
+        "Divider": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Stroke.Subtle}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Global": {
+        "Divider": {
+          "Vertical": {
+            "Width": {
+              "value": "{Sem.Size.Fixed.50}",
+              "type": "sizing"
+            }
+          },
+          "Horizontal": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.50}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

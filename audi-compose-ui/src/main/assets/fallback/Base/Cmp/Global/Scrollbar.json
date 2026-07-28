@@ -1,0 +1,40 @@
+{
+  "Cmp": {
+    "Color": {
+      "Global": {
+        "Scrollbar": {
+          "Track": {
+            "value": "{Sem.Color.Content.Quaternary}",
+            "type": "color"
+          },
+          "Thumb": {
+            "value": "{Sem.Color.Content.Primary}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Global": {
+        "Scrollbar": {
+          "Width": {
+            "value": "{Sem.Size.Fixed.400}",
+            "type": "sizing"
+          },
+          "Track": {
+            "Width": {
+              "value": "{Sem.Size.Fixed.150}",
+              "type": "sizing"
+            }
+          },
+          "Thumb": {
+            "Width": {
+              "value": "{Sem.Size.Fixed.150}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

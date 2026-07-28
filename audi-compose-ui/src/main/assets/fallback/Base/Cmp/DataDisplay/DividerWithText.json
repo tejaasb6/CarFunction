@@ -1,0 +1,72 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "DividerWithText": {
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Color.Content.Secondary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "DataDisplay": {
+        "DividerWithText": {
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Typography.Headline.Order2.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "DataDisplay": {
+        "DividerWithText": {
+          "Surface": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            },
+            "L-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            },
+            "R-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          },
+          "Content": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.300}",
+              "type": "spacing"
+            },
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            },
+            "R-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "DataDisplay": {
+        "DividerWithText": {
+          "MinHeight": {
+            "value": "{Sem.Size.Fixed.2100}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "Cmp": {
+    "Color": {
+      "Action": {
+        "IconButton": {
+          "Unselected": {
+            "Content": {
+              "Label": {
+                "Idle": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Disabled": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Loading": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "Selected": {
+            "Content": {
+              "Label": {
+                "Idle": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Disabled": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Loading": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Action": {
+        "IconButton": {
+          "MD": {
+            "Unselected": {
+              "Label": {
+                "value": "{Sem.Typography.Label.Order2.Normal}",
+                "type": "typography"
+              }
+            },
+            "Selected": {
+              "Label": {
+                "value": "{Sem.Typography.Label.Order2.Bold}",
+                "type": "typography"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Action": {
+        "IconButton": {
+          "MD": {
+            "Container": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.50}",
+                "type": "spacing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Action": {
+        "IconButton": {
+          "MD": {
+            "ButtonShape": {
+              "StateLayer": {
+                "Height": {
+                  "value": "{Sem.Size.VisualReduction}",
+                  "type": "sizing"
+                },
+                "Width": {
+                  "value": "{Sem.Size.VisualReduction}",
+                  "type": "sizing"
+                }
+              },
+              "TouchTarget": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Action": {
+        "IconButton": {
+          "ButtonShape": {
+            "Surface": {
+              "Default": {
+                "value": "{Sem.BorderRadius.Action.Button}",
+                "type": "borderRadius"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

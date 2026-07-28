@@ -1,0 +1,9 @@
+com.ui.audi.audi-compose-ui-pngs-0 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/generated/res/pngs/release
+com.ui.audi.audi-compose-ui-updated_navigation_xml-1 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/generated/updated_navigation_xml/release
+com.ui.audi.audi-compose-ui-mergeReleaseResources-2 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.ui.audi.audi-compose-ui-mergeReleaseResources-3 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.ui.audi.audi-compose-ui-release-4 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/intermediates/merged_res/release/mergeReleaseResources
+com.ui.audi.audi-compose-ui-release-5 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/build/intermediates/packaged_res/release/packageReleaseResources
+com.ui.audi.audi-compose-ui-main-6 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/res
+com.ui.audi.audi-compose-ui-release-7 /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/release/res
+gradleHome-0 /home/tejasb6/.gradle

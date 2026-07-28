@@ -1,0 +1,74 @@
+{
+  "Sem": {
+    "Shadow": {
+      "Elevation": {
+        "Level1": {
+          "value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "2",
+              "spread": "0",
+              "color": "{Sem.Color.ShadowColor.Primary}",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "3",
+              "spread": "1",
+              "color": "{Sem.Color.ShadowColor.Secondary}",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "✅ Use for elevated components. Elevation Level 1 \nUse Cases: Bottom Sheet"
+        },
+        "Level2": {
+          "value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "2",
+              "spread": "0",
+              "color": "{Sem.Color.ShadowColor.Primary}",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "2",
+              "blur": "6",
+              "spread": "2",
+              "color": "{Sem.Color.ShadowColor.Secondary}",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "✅ Use for elevated components. Elevation Level 2 \nUse Cases: Navigation Bar"
+        },
+        "Level3": {
+          "value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "3",
+              "spread": "0",
+              "color": "{Sem.Color.ShadowColor.Primary}",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "4",
+              "blur": "8",
+              "spread": "3",
+              "color": "{Sem.Color.ShadowColor.Secondary}",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "✅ Use for elevated components. Elevation Level 3 \nUse Cases: Dialog; Modal; Alert; PopOver"
+        }
+      }
+    }
+  }
+}

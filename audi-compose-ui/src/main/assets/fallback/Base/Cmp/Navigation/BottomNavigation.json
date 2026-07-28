@@ -1,0 +1,136 @@
+{
+  "Cmp": {
+    "Color": {
+      "Navigation": {
+        "BottomNavigation": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          },
+          "Divider": {
+            "Fill": {
+              "value": "{Sem.Color.Stroke.Subtle}",
+              "type": "color"
+            }
+          },
+          "Button": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              },
+              "StateLayer": {
+                "Fill": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              }
+            },
+            "Content": {
+              "Underline": {
+                "Fill": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              },
+              "Icon": {
+                "Idle": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                },
+                "Active": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "IconAdaptive": {
+            "Background": {
+              "Default": {
+                "value": "{Sem.Color.Fill.Canvas}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Navigation": {
+        "BottomNavigation": {
+          "Button": {
+            "TouchTarget": {
+              "value": "{Sem.Size.TouchTarget.MD}",
+              "type": "sizing"
+            },
+            "StateLayer": {
+              "Height": {
+                "value": "{Sem.Size.VisualReduction}",
+                "type": "sizing"
+              },
+              "Width": {
+                "value": "{Sem.Size.VisualReduction}",
+                "type": "sizing"
+              }
+            },
+            "Underline": {
+              "Height": {
+                "value": "{Sem.Size.Fixed.100}",
+                "type": "sizing"
+              },
+              "Width": {
+                "value": "{Sem.Size.Fixed.1200}",
+                "type": "sizing"
+              }
+            },
+            "Divider": {
+              "Height": {
+                "value": "{Sem.Size.Fixed.1600}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Navigation": {
+        "BottomNavigation": {
+          "Button": {
+            "Default": {
+              "value": "{Sem.BorderRadius.Max}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Navigation": {
+        "BottomNavigation": {
+          "Button": {
+            "Default": {
+              "value": "{Sem.BorderWidth.None}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "Cmp": {
+    "Color": {
+      "Group": {
+        "ContentGroup": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Group}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Group": {
+        "ContentGroup": {
+          "HasPadding": {
+            "Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          },
+          "NoPadding": {
+            "Padding": {
+              "value": "{Sem.Space.Fixed.0}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Group": {
+        "ContentGroup": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Group}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Group": {
+        "ContentGroup": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Group": {
+        "ContentGroup": {
+          "Surface": {
+            "Default": {
+              "value": "{Sem.Blur.Card}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    }
+  }
+}

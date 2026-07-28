@@ -1,0 +1,200 @@
+{
+  "Cmp": {
+    "Color": {
+      "Forms": {
+        "TimeBar": {
+          "Range": {
+            "Content": {
+              "Text": {
+                "Default": {
+                  "value": "{Sem.Color.Content.Tertiary}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "Progress": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Tertiary}",
+                "type": "color"
+              }
+            },
+            "StateLayer": {
+              "Hover": {
+                "value": "{Sem.Color.StateLayer.Bold.Hover}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.StateLayer.Bold.Pressed}",
+                "type": "color"
+              }
+            }
+          },
+          "Track": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Quaternary}",
+                "type": "color"
+              }
+            }
+          },
+          "Buffer": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Quaternary}",
+                "type": "color"
+              }
+            }
+          },
+          "Handle": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Primary}",
+                "type": "color"
+              },
+              "StateLayer": {
+                "Hover": {
+                  "value": "{Sem.Color.StateLayer.Strong.Hover}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Strong.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Stroke": {
+                "Idle": {
+                  "value": "{Sem.Color.Fill.Canvas}",
+                  "type": "color"
+                },
+                "Hover": {
+                  "value": "{Sem.Color.Fill.Canvas}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Fill.Canvas}",
+                  "type": "color"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Forms": {
+        "TimeBar": {
+          "Range": {
+            "value": "{Sem.Typography.Label.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Forms": {
+        "TimeBar": {
+          "Track": {
+            "Default": {
+              "value": "{Sem.BorderRadius.None}",
+              "type": "borderRadius"
+            }
+          },
+          "Buffer": {
+            "Default": {
+              "value": "{Sem.BorderRadius.None}",
+              "type": "borderRadius"
+            }
+          },
+          "Handle": {
+            "Default": {
+              "value": "{Sem.BorderRadius.Form.Control}",
+              "type": "borderRadius"
+            }
+          },
+          "Progress": {
+            "Default": {
+              "value": "{Sem.BorderRadius.None}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Forms": {
+        "TimeBar": {
+          "Handle": {
+            "Idle": {
+              "value": "{Sem.BorderWidth.SM}",
+              "type": "borderWidth"
+            },
+            "Pressed": {
+              "value": "{Sem.BorderWidth.SM}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "TimeBar": {
+          "Surface": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Forms": {
+        "TimeBar": {
+          "Handle": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.500}",
+              "type": "sizing"
+            },
+            "Width": {
+              "value": "{Sem.Size.Fixed.1200}",
+              "type": "sizing"
+            }
+          },
+          "Progress": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            }
+          },
+          "Track": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            }
+          },
+          "Buffer": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Forms": {
+        "TimeBar": {
+          "Track": {
+            "Default": {
+              "value": "{Sem.Blur.MD}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    }
+  }
+}

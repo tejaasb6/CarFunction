@@ -1,0 +1,16 @@
+{
+  "Cmp": {
+    "Color": {
+      "Global": {
+        "Skeleton": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Skeleton}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    }
+  }
+}

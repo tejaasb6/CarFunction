@@ -1,0 +1,40 @@
+{
+  "Cmp": {
+    "Size": {
+      "DataDisplay": {
+        "Icon": {
+          "SM": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.800}",
+              "type": "sizing"
+            },
+            "MinWidth": {
+              "value": "{Sem.Size.Fixed.800}",
+              "type": "sizing"
+            }
+          },
+          "MD": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.1200}",
+              "type": "sizing"
+            },
+            "MinWidth": {
+              "value": "{Sem.Size.Fixed.1200}",
+              "type": "sizing"
+            }
+          },
+          "LG": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.1600}",
+              "type": "sizing"
+            },
+            "MinWidth": {
+              "value": "{Sem.Size.Fixed.1600}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

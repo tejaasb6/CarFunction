@@ -1,0 +1,78 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "TextList": {
+          "Content": {
+            "Copy": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "DataDisplay": {
+        "TextList": {
+          "MD": {
+            "Copy": {
+              "value": "{Sem.Typography.Copy.Order1.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "DataDisplay": {
+        "TextList": {
+          "MD": {
+            "TextLine": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.250}",
+                "type": "spacing"
+              },
+              "FirstLevel": {
+                "L-Padding": {
+                  "value": "{Sem.Space.Fixed.0}",
+                  "type": "spacing"
+                }
+              },
+              "SecondLevel": {
+                "L-Padding": {
+                  "value": "{Sem.Space.Fixed.500}",
+                  "type": "spacing"
+                }
+              },
+              "ThirdLevel": {
+                "L-Padding": {
+                  "value": "{Sem.Space.Fixed.1000}",
+                  "type": "spacing"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "DataDisplay": {
+        "TextList": {
+          "MD": {
+            "Indicator": {
+              "MinWidth": {
+                "value": "{Sem.Size.Fixed.1000}",
+                "type": "sizing"
+              },
+              "MinHeight": {
+                "value": "{Sem.Size.Fixed.1400}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

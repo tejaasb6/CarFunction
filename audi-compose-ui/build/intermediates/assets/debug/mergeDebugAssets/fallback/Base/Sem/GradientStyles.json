@@ -1,0 +1,13 @@
+{
+  "Sem": {
+    "Gradient": {
+      "Graph": {
+        "Temperature": {
+          "value": "linear-gradient(90deg, {Sem.Color.Graph.Temperature.Cold}  0%, {Sem.Color.Graph.Temperature.Hot} 100%)",
+          "type": "color",
+          "description": "✅ Use for UI which displays temperature ranges from cold to warm."
+        }
+      }
+    }
+  }
+}

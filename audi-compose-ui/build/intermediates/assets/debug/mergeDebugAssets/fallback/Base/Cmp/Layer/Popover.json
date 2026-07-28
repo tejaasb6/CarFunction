@@ -1,0 +1,124 @@
+{
+  "Cmp": {
+    "Color": {
+      "Layer": {
+        "Popover": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          },
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Color.Content.Secondary}",
+              "type": "color"
+            },
+            "Copy": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Layer": {
+        "Popover": {
+          "LG": {
+            "Title": {
+              "value": "{Sem.Typography.Headline.Order1.Normal}",
+              "type": "typography"
+            },
+            "Copy": {
+              "value": "{Sem.Typography.Copy.Order1.Normal}",
+              "type": "typography"
+            }
+          },
+          "MD": {
+            "Title": {
+              "value": "{Sem.Typography.Headline.Order1.Normal}",
+              "type": "typography"
+            },
+            "Copy": {
+              "value": "{Sem.Typography.Copy.Order2.Normal}",
+              "type": "typography"
+            }
+          },
+          "SM": {
+            "Title": {
+              "value": "{Sem.Typography.Headline.Order1.Normal}",
+              "type": "typography"
+            },
+            "Copy": {
+              "value": "{Sem.Typography.Copy.Order3.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Layer": {
+        "Popover": {
+          "Default": {
+            "value": "{Sem.Shadow.Elevation.Level2}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Layer": {
+        "Popover": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Layer": {
+        "Popover": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Group}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Layer": {
+        "Popover": {
+          "Padding": {
+            "value": "{Sem.Space.Fixed.200}",
+            "type": "spacing"
+          },
+          "Content": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.0}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Layer": {
+        "Popover": {
+          "Tip": {
+            "All": {
+              "value": "{Sem.Size.Fixed.600}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

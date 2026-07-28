@@ -1,0 +1,46 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "Table": {
+          "Surface": {
+            "Fill": {
+              "Default": {
+                "value": "{Sem.Color.Fill.Transparent}",
+                "type": "color"
+              }
+            }
+          },
+          "Content": {
+            "Text": {
+              "Headline": {
+                "Default": {
+                  "value": "{Sem.Color.Content.Secondary}",
+                  "type": "color"
+                }
+              },
+              "Copy": {
+                "Default": {
+                  "value": "{Sem.Color.Content.Tertiary}",
+                  "type": "color"
+                }
+              },
+              "Title": {
+                "Default": {
+                  "value": "{Sem.Color.Content.Secondary}",
+                  "type": "color"
+                }
+              }
+            },
+            "Divider": {
+              "Default": {
+                "value": "{Sem.Color.Stroke.Medium}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

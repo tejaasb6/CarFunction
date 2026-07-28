@@ -1,0 +1,204 @@
+{
+  "Cmp": {
+    "Color": {
+      "Action": {
+        "MultiToggleButton": {
+          "Indicator": {
+            "Selected": {
+              "Surface": {
+                "Default": {
+                  "Fill": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                },
+                "Heating": {
+                  "Fill": {
+                    "value": "{Sem.Color.Graph.Temperature.Hot}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.MediumInverted}",
+                    "type": "color"
+                  }
+                },
+                "Cooling": {
+                  "Fill": {
+                    "value": "{Sem.Color.Graph.Temperature.Cold}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.MediumInverted}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Unselected": {
+              "Surface": {
+                "Default": {
+                  "Fill": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                },
+                "Cooling": {
+                  "Fill": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                },
+                "Heating": {
+                  "Fill": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Stroke": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Action": {
+        "MultiToggleButton": {
+          "LabelMode": {
+            "StateLayer": {
+              "H-Padding": {
+                "value": "{Sem.Space.Fixed.450}",
+                "type": "spacing"
+              }
+            }
+          },
+          "Indicator": {
+            "Surface": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.100}",
+                "type": "spacing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Action": {
+        "MultiToggleButton": {
+          "LabelMode": {
+            "StateLayer": {
+              "MinHeight": {
+                "value": "{Sem.Size.VisualReduction}",
+                "type": "sizing"
+              },
+              "MinWidth": {
+                "value": "{Sem.Size.Fixed.4800}",
+                "type": "sizing"
+              }
+            },
+            "TouchTarget": {
+              "MinHeight": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              },
+              "MinWidth": {
+                "value": "{Sem.Size.Fixed.4800}",
+                "type": "sizing"
+              }
+            }
+          },
+          "IconMode": {
+            "TouchTarget": {
+              "MinHeight": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              },
+              "MinWidth": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              }
+            },
+            "StateLayer": {
+              "MinHeight": {
+                "value": "{Sem.Size.VisualReduction}",
+                "type": "sizing"
+              },
+              "MinWidth": {
+                "value": "{Sem.Size.VisualReduction}",
+                "type": "sizing"
+              }
+            }
+          },
+          "IndicatorLinear": {
+            "Surface": {
+              "Height": {
+                "value": "{Sem.Size.Fixed.100}",
+                "type": "sizing"
+              },
+              "Width": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Action": {
+        "MultiToggleButton": {
+          "Indicator": {
+            "Default": {
+              "value": "{Sem.BorderRadius.None}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Action": {
+        "MultiToggleButton": {
+          "Indicator": {
+            "Default": {
+              "value": "{Sem.BorderWidth.SM}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Opacity": {
+      "Action": {
+        "MultiToggleButton": {
+          "Indicator": {
+            "Unselected": {
+              "value": "{Sem.Opacity.50%}",
+              "type": "opacity"
+            },
+            "Selected": {
+              "value": "{Sem.Opacity.100%}",
+              "type": "opacity"
+            }
+          }
+        }
+      }
+    }
+  }
+}

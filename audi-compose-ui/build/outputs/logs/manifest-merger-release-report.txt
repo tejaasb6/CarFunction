@@ -1,0 +1,42 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:2:1-20:12
+	package
+		INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:2:11-69
+queries
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:5:5-7:15
+provider#com.ui.themeprovider
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:6:9-64
+	android:authorities
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:6:19-61
+application
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:9:5-19:19
+provider#androidx.startup.InitializationProvider
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:10:9-18:20
+	tools:node
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:14:13-31
+	android:authorities
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:12:13-68
+	android:exported
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:11:13-67
+meta-data#com.ui.audi.AudiThemeInitializer
+ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:15:13-17:52
+	android:value
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:17:17-49
+	android:name
+		ADDED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:16:17-64
+uses-sdk
+INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml
+INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml

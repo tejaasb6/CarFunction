@@ -1,0 +1,152 @@
+{
+  "Cmp": {
+    "Color": {
+      "Action": {
+        "Tile": {
+          "Unselected": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Group}",
+                "type": "color"
+              },
+              "Stroke": {
+                "Idle": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                },
+                "Disabled": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              }
+            },
+            "StateLayer": {
+              "Pressed": {
+                "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                "type": "color"
+              }
+            }
+          },
+          "Selected": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Selected.Subtle}",
+                "type": "color"
+              },
+              "Stroke": {
+                "Idle": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                },
+                "Disabled": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              }
+            },
+            "StateLayer": {
+              "Pressed": {
+                "value": "{Sem.Color.StateLayer.Medium.Pressed}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Action": {
+        "Tile": {
+          "Padding": {
+            "value": "{Sem.Space.Fixed.200}",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Action": {
+        "Tile": {
+          "MinHeight": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          },
+          "MinWidth": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Action": {
+        "Tile": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Group}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Action": {
+        "Tile": {
+          "Unselected": {
+            "Idle": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            },
+            "Pressed": {
+              "value": "{Sem.BorderWidth.Action.Pressed}",
+              "type": "borderWidth"
+            },
+            "Disabled": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            },
+            "Loading": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            }
+          },
+          "Selected": {
+            "Idle": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            },
+            "Pressed": {
+              "value": "{Sem.BorderWidth.Action.Pressed}",
+              "type": "borderWidth"
+            },
+            "Disabled": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            },
+            "Loading": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Action": {
+        "Tile": {
+          "Default": {
+            "value": "{Sem.Blur.Card}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}

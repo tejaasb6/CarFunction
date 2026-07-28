@@ -1,0 +1,48 @@
+{
+  "Cmp": {
+    "Color": {
+      "Navigation": {
+        "TopBar": {
+          "Headline": {
+            "value": "{Sem.Color.Content.Secondary}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Navigation": {
+        "TopBar": {
+          "Headline": {
+            "value": "{Sem.Typography.Headline.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Navigation": {
+        "TopBar": {
+          "Wrapper": {
+            "MinHeight": {
+              "value": "{Sem.Size.TouchTarget.MD}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Navigation": {
+        "TopBar": {
+          "Wrapper": {
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

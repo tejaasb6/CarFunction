@@ -1,0 +1,86 @@
+{
+  "Cmp": {
+    "Color": {
+      "Layer": {
+        "Snackbar": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          },
+          "Content": {
+            "Text": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Layer": {
+        "Snackbar": {
+          "Copy": {
+            "value": "{Sem.Typography.Copy.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Layer": {
+        "Snackbar": {
+          "Default": {
+            "value": "{Sem.Shadow.Elevation.Level3}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Layer": {
+        "Snackbar": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Layer": {
+        "Snackbar": {
+          "Default": {
+            "value": "{Sem.BorderRadius.MD}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Layer": {
+        "Snackbar": {
+          "H-Padding": {
+            "value": "{Sem.Space.Fixed.200}",
+            "type": "spacing"
+          },
+          "CopyWrapper": {
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            },
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

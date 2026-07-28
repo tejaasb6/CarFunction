@@ -1,0 +1,134 @@
+{
+  "Cmp": {
+    "Color": {
+      "Feedback": {
+        "SemanticShape": {
+          "Neutral": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Neutral}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Informative": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Informative}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Positive": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Positive}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Advisory": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Advisory}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Warning": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Warning}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Critical": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Signal.Critical}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Feedback": {
+        "SemanticShape": {
+          "Default": {
+            "value": "{Sem.BorderWidth.SM}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Feedback": {
+        "SemanticShape": {
+          "Ellipse": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.300}",
+              "type": "sizing"
+            },
+            "Width": {
+              "value": "{Sem.Size.Fixed.300}",
+              "type": "sizing"
+            }
+          },
+          "Triangle": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            },
+            "Width": {
+              "value": "{Sem.Size.Fixed.300}",
+              "type": "sizing"
+            }
+          },
+          "Rectangle": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            },
+            "Width": {
+              "value": "{Sem.Size.Fixed.250}",
+              "type": "sizing"
+            }
+          },
+          "Container": {
+            "Dimension": {
+              "value": "{Sem.Size.Fixed.400}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

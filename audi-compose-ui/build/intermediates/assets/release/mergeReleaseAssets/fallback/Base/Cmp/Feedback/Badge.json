@@ -1,0 +1,220 @@
+{
+  "Cmp": {
+    "Color": {
+      "Feedback": {
+        "Badge": {
+          "Pill": {
+            "Neutral": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Neutral}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Neutral}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Neutral}",
+                  "type": "color"
+                }
+              }
+            },
+            "Informative": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Informative}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Informative}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Informative}",
+                  "type": "color"
+                }
+              }
+            },
+            "Positive": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Positive}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Positive}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Positive}",
+                  "type": "color"
+                }
+              }
+            },
+            "Advisory": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Advisory}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Advisory}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Advisory}",
+                  "type": "color"
+                }
+              }
+            },
+            "Warning": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Warning}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Warning}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Warning}",
+                  "type": "color"
+                }
+              }
+            },
+            "Critical": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Critical}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "value": "{Sem.Color.Content.OnSignal.Critical}",
+                  "type": "color"
+                },
+                "Value": {
+                  "value": "{Sem.Color.Content.OnSignal.Critical}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "Label": {
+            "value": "{Sem.Color.Content.Primary}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Feedback": {
+        "Badge": {
+          "Label": {
+            "value": "{Sem.Typography.Label.Order2.Normal}",
+            "type": "typography"
+          },
+          "Pill": {
+            "Label": {
+              "value": "{Sem.Typography.Label.Order3.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Feedback": {
+        "Badge": {
+          "Default": {
+            "value": "{Sem.BorderWidth.SM}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Feedback": {
+        "Badge": {
+          "Pill": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.1200}",
+              "type": "sizing"
+            },
+            "MinWidth": {
+              "value": "{Sem.Size.Fixed.1200}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Feedback": {
+        "Badge": {
+          "Pill": {
+            "Padding": {
+              "value": "{Sem.Space.Fixed.100}",
+              "type": "spacing"
+            },
+            "Gap": {
+              "value": "{Sem.Space.Fixed.100}",
+              "type": "spacing"
+            }
+          },
+          "Gap": {
+            "value": "{Sem.Space.Fixed.200}",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Feedback": {
+        "Badge": {
+          "Pill": {
+            "value": "{Sem.BorderRadius.Max}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    }
+  }
+}

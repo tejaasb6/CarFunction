@@ -1,0 +1,12 @@
+{
+  "Cmp": {
+    "Opacity": {
+      "Navigation": {
+        "Disabled": {
+          "value": "{Sem.Opacity.Disabled}",
+          "type": "opacity"
+        }
+      }
+    }
+  }
+}

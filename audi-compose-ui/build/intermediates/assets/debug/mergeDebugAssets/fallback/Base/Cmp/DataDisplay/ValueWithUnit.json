@@ -1,0 +1,124 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "ValueWithUnit": {
+          "Content": {
+            "Text": {
+              "Value": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Unit": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "DataDisplay": {
+        "ValueWithUnit": {
+          "SM": {
+            "Value": {
+              "value": "{Sem.Typography.Label.Order3.Normal}",
+              "type": "typography"
+            },
+            "Unit": {
+              "value": "{Sem.Typography.Label.Order4.Normal}",
+              "type": "typography"
+            }
+          },
+          "MD": {
+            "Value": {
+              "value": "{Sem.Typography.Label.Order2.Normal}",
+              "type": "typography"
+            },
+            "Unit": {
+              "value": "{Sem.Typography.Label.Order3.Normal}",
+              "type": "typography"
+            }
+          },
+          "LG": {
+            "Value": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            },
+            "Unit": {
+              "value": "{Sem.Typography.Label.Order2.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "DataDisplay": {
+        "ValueWithUnit": {
+          "SM": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            },
+            "UnitWrapper": {
+              "TopAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.3}",
+                  "type": "spacing"
+                }
+              },
+              "BottomAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.6}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "MD": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            },
+            "UnitWrapper": {
+              "TopAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.0}",
+                  "type": "spacing"
+                }
+              },
+              "BottomAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.3}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "LG": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            },
+            "UnitWrapper": {
+              "TopAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.3}",
+                  "type": "spacing"
+                }
+              },
+              "BottomAligned": {
+                "T-Padding": {
+                  "value": "{Core.DimensionREM.9}",
+                  "type": "spacing"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

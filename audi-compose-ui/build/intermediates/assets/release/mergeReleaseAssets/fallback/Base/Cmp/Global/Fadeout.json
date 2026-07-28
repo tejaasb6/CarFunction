@@ -1,0 +1,14 @@
+{
+  "Cmp": {
+    "Size": {
+      "Global": {
+        "Fadeout": {
+          "Fading": {
+            "value": "{Sem.Size.Fixed.600}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}

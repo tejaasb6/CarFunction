@@ -1,0 +1,292 @@
+{
+  "Cmp": {
+    "Color": {
+      "Layer": {
+        "Notification": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          },
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Color.Content.Secondary}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Subheadline": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Copy": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Metadata": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Error": {
+              "value": "{Cmp.Color.Layer.Notification.Content.Metadata}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Layer": {
+        "Notification": {
+          "Headline": {
+            "value": "{Sem.Typography.Headline.Order1.Bold}",
+            "type": "typography"
+          },
+          "Subheadline": {
+            "value": "{Sem.Typography.Copy.Order1.Normal}",
+            "type": "typography"
+          },
+          "Copy": {
+            "value": "{Sem.Typography.Copy.Order1.Normal}",
+            "type": "typography"
+          },
+          "Error": {
+            "value": "{Sem.Typography.Copy.Order1.Normal}",
+            "type": "typography"
+          },
+          "Metadata": {
+            "value": "{Sem.Typography.Copy.Order2.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Layer": {
+        "Notification": {
+          "Default": {
+            "value": "{Sem.Shadow.Elevation.Level3}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Layer": {
+        "Notification": {
+          "Default": {
+            "value": "{Sem.BorderWidth.Group.Idle}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Layer": {
+        "Notification": {
+          "Default": {
+            "value": "{Sem.BorderRadius.MD}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Layer": {
+        "Notification": {
+          "Item": {
+            "Expanded": {
+              "Surface": {
+                "H-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "V-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "Gap": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "HeaderContainer": {
+                  "Gap": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "Metadata": {
+                    "Gap": {
+                      "value": "{Sem.Space.Fixed.150}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "ContentContainer": {
+                  "L-Padding": {
+                    "value": "{Sem.Space.Fixed.1600}",
+                    "type": "spacing"
+                  },
+                  "ContentWrapper": {
+                    "T-Padding": {
+                      "value": "{Sem.Space.Fixed.200}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "ActionContainer": {
+                  "L-Padding": {
+                    "value": "{Sem.Space.Fixed.1600}",
+                    "type": "spacing"
+                  }
+                }
+              }
+            },
+            "Collapsed": {
+              "Surface": {
+                "H-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "V-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "Gap": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "HeadlineContainer": {
+                  "Gap": {
+                    "value": "{Sem.Space.Fixed.150}",
+                    "type": "spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Group": {
+            "Expanded": {
+              "Surface": {
+                "Gap": {
+                  "value": "{Sem.Space.Fixed.50}",
+                  "type": "spacing"
+                },
+                "HeaderContainer": {
+                  "H-Padding": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "V-Padding": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "Gap": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "Metadata": {
+                    "Gap": {
+                      "value": "{Sem.Space.Fixed.150}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "Slot": {
+                  "Gap": {
+                    "value": "{Sem.Space.Fixed.25}",
+                    "type": "spacing"
+                  }
+                }
+              }
+            },
+            "Collapsed": {
+              "Surface": {
+                "H-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "V-Padding": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "Gap": {
+                  "value": "{Sem.Space.Fixed.200}",
+                  "type": "spacing"
+                },
+                "HeaderContainer": {
+                  "Gap": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "Metadata": {
+                    "Gap": {
+                      "value": "{Sem.Space.Fixed.150}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "ContentContainer": {
+                  "L-Padding": {
+                    "value": "{Sem.Space.Fixed.1600}",
+                    "type": "spacing"
+                  },
+                  "B-Padding": {
+                    "value": "{Sem.Space.Fixed.200}",
+                    "type": "spacing"
+                  },
+                  "HeadlineContainer": {
+                    "Gap": {
+                      "value": "{Sem.Space.Fixed.300}",
+                      "type": "spacing"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "AppIconPlaceholder": {
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.300}",
+              "type": "spacing"
+            },
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.300}",
+              "type": "spacing"
+            }
+          },
+          "ExpandButton": {
+            "LabelWrapper": {
+              "L-Padding": {
+                "value": "{Sem.Space.Fixed.100}",
+                "type": "spacing"
+              }
+            },
+            "StateLayer": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.100}",
+                "type": "spacing"
+              },
+              "H-Padding": {
+                "value": "{Sem.Space.Fixed.100}",
+                "type": "spacing"
+              }
+            }
+          },
+          "MessageAction": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

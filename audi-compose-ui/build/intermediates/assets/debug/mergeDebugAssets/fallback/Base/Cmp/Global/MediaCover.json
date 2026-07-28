@@ -1,0 +1,86 @@
+{
+  "Cmp": {
+    "Color": {
+      "Global": {
+        "MediaCover": {
+          "Content": {
+            "Title": {
+              "value": "{Sem.Color.Content.PrimaryInverted}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.PrimaryInverted}",
+              "type": "color"
+            }
+          },
+          "Surface": {
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Bold}",
+              "type": "color"
+            },
+            "Fill": {
+              "value": "{Sem.Color.Fill.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Global": {
+        "MediaCover": {
+          "XS": {
+            "All": {
+              "value": "{Sem.Size.Fixed.1600}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Global": {
+        "MediaCover": {
+          "XS": {
+            "Title": {
+              "value": "{Sem.Typography.Label.Order4.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Global": {
+        "MediaCover": {
+          "Surface": {
+            "value": "{Sem.BorderRadius.Image}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Global": {
+        "MediaCover": {
+          "Surface": {
+            "value": "{Sem.BorderWidth.SM}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Global": {
+        "MediaCover": {
+          "Surface": {
+            "BackgroundLayerBlur": {
+              "value": "{Sem.Blur.MD}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    }
+  }
+}

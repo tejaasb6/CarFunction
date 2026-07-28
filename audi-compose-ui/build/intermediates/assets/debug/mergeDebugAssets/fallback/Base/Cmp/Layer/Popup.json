@@ -1,0 +1,94 @@
+{
+  "Cmp": {
+    "Color": {
+      "Layer": {
+        "Popup": {
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Color.Content.Secondary}",
+              "type": "color"
+            }
+          },
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Layer": {
+        "Popup": {
+          "Headline": {
+            "value": "{Sem.Typography.Headline.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Layer": {
+        "Popup": {
+          "Default": {
+            "value": "{Sem.Shadow.Elevation.Level3}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Layer": {
+        "Popup": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Layer": {
+        "Popup": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Group}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Layer": {
+        "Popup": {
+          "HeadlineSection": {
+            "HeadlineWrapper": {
+              "H-Padding": {
+                "value": "{Sem.Space.Fixed.400}",
+                "type": "spacing"
+              },
+              "MinHeight": {
+                "value": "{Sem.Size.Fixed.2800}",
+                "type": "sizing"
+              }
+            }
+          },
+          "ContentSection": {
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            },
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

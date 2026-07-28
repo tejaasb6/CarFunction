@@ -1,0 +1,26 @@
+{
+  "Cmp": {
+    "BorderRadius": {
+      "Forms": {
+        "SearchField": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Max}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "SearchField": {
+          "Caption": {
+            "L-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

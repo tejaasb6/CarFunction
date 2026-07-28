@@ -1,0 +1,28 @@
+{
+  "Cmp": {
+    "Color": {
+      "Global": {
+        "Scrim": {
+          "Surface": {
+            "Default": {
+              "value": "{Sem.Color.Fill.Scrim}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Global": {
+        "Scrim": {
+          "Surface": {
+            "Default": {
+              "value": "{Sem.Blur.Cover}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "Sem": {
+    "Color": {
+      "Fill": {
+        "Prominent": {
+          "value": "{Core.Color.BrandBlue.100.solid}",
+          "type": "color",
+          "description": "✅ Use for primary actions or elements that need to stand out. \n❌ Avoid using for secondary or less important actions."
+        },
+        "Primary": {
+          "value": "{Core.Color.Grey.95.solid}",
+          "type": "color",
+          "description": "✅ Use for primary actions (e.g., \"Submit\", \"Save\"). Use in exceptional cases to highlight an interactive part of complex components (e.g. handle of slider)  \n❌ Do not use for secondary or tertiary actions."
+        },
+        "Secondary": {
+          "value": "{Core.Color.Grey.15.opa65}",
+          "type": "color",
+          "description": "✅ Use for secondary actions. \n❌ Avoid using for primary or destructive actions."
+        },
+        "Tertiary": {
+          "value": "{Core.Color.Grey.15.opa001}",
+          "type": "color",
+          "description": "✅ Use for tertiary actions (actions that are optional, infrequent, or supplementary). Also apply on Navigation items. \n❌ Avoid using for primary or secondary actions."
+        },
+        "Canvas": {
+          "value": "{Core.Color.Grey.15.solid}",
+          "type": "color",
+          "description": "✅ Use for full-page backgrounds, section backgrounds and backgrounds of  elevated elements.\n❌ Avoid using for individual components which are not elevated."
+        },
+        "Scrim": {
+          "value": "{Core.Color.Grey.10.opa70}",
+          "type": "color",
+          "description": "✅ Apply as an overlay to dim the background when modals or sheets are open. \n❌ Do not use for component fills or interactive elements."
+        },
+        "Group": {
+          "value": "{Core.Color.Grey.25.opa65}",
+          "type": "color",
+          "description": "✅ Use for grouping related content or components. \n❌ Avoid using for individual buttons or standalone elements."
+        },
+        "Container": {
+          "value": "{Core.Color.White.opa6}",
+          "type": "color",
+          "description": "✅ Use for secondary non interactive surfaces. \n❌ Do not use for interactive buttons."
+        },
+        "Input": {
+          "value": "{Core.Color.Grey.15.solid}",
+          "type": "color",
+          "description": "✅ Use for form controls and input fields. \n❌ Avoid using for buttons or high-visibility elements."
+        },
+        "Transparent": {
+          "value": "{Core.Color.Grey.50.opa0}",
+          "type": "color",
+          "description": "✅ Use when a component needs to be visually transparent (in certain states). \n❌ Do not use for solid backgrounds or opaque elements."
+        },
+        "Skeleton": {
+          "value": "{Core.Color.White.opa6}",
+          "type": "color",
+          "description": "✅ Use for skeleton screens. \n❌ Do not use for interactive elements."
+        },
+        "Selected": {
+          "Strong": {
+            "value": "{Core.Color.Grey.80.solid}",
+            "type": "color",
+            "description": "✅ Use for selected states of buttons and form controls. \n❌ Avoid using for navigation items and unselected states."
+          },
+          "Subtle": {
+            "value": "{Core.Color.Taupe.300}",
+            "type": "color",
+            "description": "✅ Use to highlight selections subtly. Typically used on spacious components. \n❌ Avoid using for buttons or controls."
+          }
+        },
+        "Signal": {
+          "Positive": {
+            "value": "{Core.Color.Green.100.solid}",
+            "type": "color",
+            "description": "✅ Use to signal positive status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Advisory": {
+            "value": "{Core.Color.Yellow.100.solid}",
+            "type": "color",
+            "description": "✅ Use to signal advisory status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Warning": {
+            "value": "{Core.Color.Orange.100.solid}",
+            "type": "color",
+            "description": "✅ Use to signal warning status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Informative": {
+            "value": "{Core.Color.Blue.200.solid}",
+            "type": "color",
+            "description": "✅ Use to signal informative status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Neutral": {
+            "value": "{Core.Color.Grey.70.solid}",
+            "type": "color",
+            "description": "✅ Use to signal neutral status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Critical": {
+            "value": "{Core.Color.Red.100.solid}",
+            "type": "color",
+            "description": "✅ Use to signal critical status. Combine with \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          }
+        }
+      },
+      "Stroke": {
+        "Transparent": {
+          "value": "{Core.Color.Grey.50.opa0}",
+          "type": "color",
+          "description": "✅ Use for component strokes that are transparent in required states. \n❌ Avoid using on stateless components (in these cases no token needs to be applied)."
+        },
+        "Prominent": {
+          "value": "{Core.Color.BrandBlue.200.solid}",
+          "type": "color",
+          "description": "✅ Use for components that need to stand out. \n❌ Avoid combining with other fill than \"Prominent\"."
+        },
+        "Signal": {
+          "Critical": {
+            "value": "{Core.Color.Red.200.solid}",
+            "type": "color",
+            "description": "✅ Use as stroke on components to indicate error state or on destructive components. \n❌ Avoid using for content or fills. Avoid using as decorative color."
+          },
+          "Focus": {
+            "value": "{Core.Color.Purple.100.solid}",
+            "type": "color",
+            "description": "✅ Use for strokes to highlight components which received focus state. Combine with  \"Sem.Color.Stoke.Bold\" \n❌ Avoid using for content or fills. Avoid using as decorative color."
+          },
+          "Positive": {
+            "value": "{Core.Color.Green.200.solid}",
+            "type": "color",
+            "description": "✅ Use as stroke on components to indicate success state or on encouraging components. \n❌ Avoid using for content or fills. Avoid using as decorative color."
+          }
+        },
+        "Bold": {
+          "value": "{Core.Color.Grey.70.solid}",
+          "type": "color",
+          "description": "✅ Bold Stroke assures contrast against all backgounds. \nUse on interactive, components in idle and disabled states. \nUse to assure contrast of non interactive shapes, if required. \n❌ Avoid combining with \"Prominent\" or \"Destructive\" fill. Avoid using on components in selected state."
+        },
+        "Strong": {
+          "value": "{Core.Color.Grey.100.solid}",
+          "type": "color",
+          "description": "✅ Use for pressed state if idle states stroke is \"Bold\" or \"Medium\". \nCan also be use as fallback solution to indicate selected state. \n❌ Avoid using on non interactive components. Avoid on idle, disabled staes of unselected components."
+        },
+        "Medium": {
+          "value": "{Core.Color.Grey.45.solid}",
+          "type": "color",
+          "description": "✅ Use for interactive components with low priority on idle and disabled states. \n❌ Avoid if stroke color needs to meet A11Y contrast requirements."
+        },
+        "Subtle": {
+          "value": "{Core.Color.White.opa6}",
+          "type": "color",
+          "description": "✅ Use for dividers. \n❌ Avoid using for interactive or prominent elements."
+        },
+        "MediumInverted": {
+          "value": "{Core.Color.Black.opa45}",
+          "type": "color",
+          "description": "✅ Use to ensure contrast of colored shapes on \"inverted\" surfaces (eg: Graph Color on Fill.Selected.Strong)\n❌ Avoid using for elements placed on canvas or group."
+        }
+      },
+      "StateLayer": {
+        "Subtle": {
+          "Hover": {
+            "value": "{Core.Color.White.opa3}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate hover state. Can be combined with: \n- Sem.Color.Fill.Secondary.Strong \n- Sem.Color.Fill.Tertiary \n- Sem.Color.Fill.Quaternary \n- Sem.Color.Fill.Group  \n❌ Avoid using as Fill, Stroke or Content Color"
+          },
+          "Pressed": {
+            "value": "{Core.Color.White.opa6}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate pressed state. Can be combined with: \n- Sem.Color.Fill.Secondary.Strong \n- Sem.Color.Fill.Tertiary \n- Sem.Color.Fill.Quaternary \n- Sem.Color.Fill.Group  \n❌ Avoid using as Fill, Stroke or Content Color"
+          }
+        },
+        "Medium": {
+          "Hover": {
+            "value": "{Core.Color.Black.opa10}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate hover state of interactive components. Can be combined with: \n- Sem.Color.Fill.Selected.Subtle  \n❌ Avoid using as Fill, Stroke or Content Color"
+          },
+          "Pressed": {
+            "value": "{Core.Color.Black.opa20}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate pressed state of interactive components. Can be combined with: \n- Sem.Color.Fill.Selected.Subtle  \n❌ Avoid using as Fill, Stroke or Content Color"
+          }
+        },
+        "Bold": {
+          "Hover": {
+            "value": "{Core.Color.Black.opa10}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate hover state of interactive components. Can be combined with: \n- Sem.Color.Fill.Selected.Strong \n- Sem.Color.Fill.Prominent \n- Sem.Color.Fill.Destructive \nUse also to overlay interactive components with image background.  \n❌ Avoid using as Fill, Stroke or Content Color"
+          },
+          "Pressed": {
+            "value": "{Core.Color.Black.opa20}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate pressed state of interactive components. Can be combined with: \n- Sem.Color.Fill.Selected.Strong \n- Sem.Color.Fill.Prominent \n- Sem.Color.Fill.Destructive \nUse also to overlay interactive components with image background. \n❌ Avoid using as Fill, Stroke or Content Color"
+          }
+        },
+        "Strong": {
+          "Hover": {
+            "value": "{Core.Color.Black.opa10}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate hover state of interactive components. Can be combined with: \n- Sem.Color.Fill.Primary  \n❌ Avoid using as Fill, Stroke or Content Color"
+          },
+          "Pressed": {
+            "value": "{Core.Color.Black.opa20}",
+            "type": "color",
+            "description": "✅ Overlays fill color to indicate pressed state of interactive components. Can be combined with: \n- Sem.Color.Fill.Primary  \n❌ Avoid using as Fill, Stroke or Content Color"
+          }
+        }
+      },
+      "Content": {
+        "Primary": {
+          "value": "{Core.Color.White.solid}",
+          "type": "color",
+          "description": "✅ Use for primary content of components (Labels, UserInput, Icons). \n❌ Avoid using for , Copy Text, Headlines or secondary content (Descriptions, Units, Appendix)."
+        },
+        "Secondary": {
+          "value": "{Core.Color.Grey.100.solid}",
+          "type": "color",
+          "description": "✅ Use for Headlines (and Display). \n❌ Avoid using elsewhere than on Headlines."
+        },
+        "Tertiary": {
+          "value": "{Core.Color.Grey.80.solid}",
+          "type": "color",
+          "description": "✅ Use for links, copy text and secondary content (Icon, Description, Placeholder, Units, Appendix, Message, Range, TrainLine) \n❌ Avoid using on component parts which the user interacts with."
+        },
+        "Quaternary": {
+          "value": "{Core.Color.White.opa20}",
+          "type": "color",
+          "description": "✅ Use for low priority elements of components. \n❌ Avoid using on text."
+        },
+        "Transparent": {
+          "value": "{Core.Color.Grey.50.opa0}",
+          "type": "color",
+          "description": "✅ Use for content that is transparent in required states. \n❌ Avoid using on stateless components (in these cases no token needs to be applied)."
+        },
+        "PrimaryStatic": {
+          "value": "{Core.Color.White.solid}",
+          "type": "color",
+          "description": "✅ Use for primary content placed on \"static\" surfaces (similar lightness on dark and light themes) e.g: on \"Fill.Prominent\".\n❌ Avoid using on content placed on non static content"
+        },
+        "PrimaryInverted": {
+          "value": "{Core.Color.Black.solid}",
+          "type": "color",
+          "description": "✅ Use for primary content of inverterted components. \n❌ Never apply on non inverted components."
+        },
+        "OnSignal": {
+          "Neutral": {
+            "value": "{Core.Color.Black.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Neutral\"."
+          },
+          "Informative": {
+            "value": "{Core.Color.Black.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Informative\"."
+          },
+          "Positive": {
+            "value": "{Core.Color.White.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Success\"."
+          },
+          "Advisory": {
+            "value": "{Core.Color.Black.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Advisory\"."
+          },
+          "Warning": {
+            "value": "{Core.Color.Black.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Warning\"."
+          },
+          "Critical": {
+            "value": "{Core.Color.White.solid}",
+            "type": "color",
+            "description": "✅ Use for primary content placed on \"Signal.Critical\"."
+          }
+        },
+        "Signal": {
+          "Positive": {
+            "value": "{Core.Color.Green.200.solid}",
+            "type": "color",
+            "description": "✅ Use for content to signal positive status. \n❌ Avoid using for fills or stokes."
+          },
+          "Advisory": {
+            "value": "{Core.Color.Yellow.100.solid}",
+            "type": "color",
+            "description": "✅ Use for fill to signal pending or advisory status. Combine with  \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Warning": {
+            "value": "{Core.Color.Orange.100.solid}",
+            "type": "color",
+            "description": "✅ Use for fill to signal warning status. Combine with  \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Informative": {
+            "value": "{Core.Color.Blue.200.solid}",
+            "type": "color",
+            "description": "✅ Use for fill to signal informative status. Combine with  \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Neutral": {
+            "value": "{Core.Color.Grey.70.solid}",
+            "type": "color",
+            "description": "✅ Use for fill to signal neutral status. Combine with  \"Sem.Color.Stoke.Bold\" if you need to assure contrast against background. \n❌ Avoid using for content."
+          },
+          "Critical": {
+            "value": "{Core.Color.Red.200.solid}",
+            "type": "color",
+            "description": "✅ Use for content to signal negative status. \n❌ Avoid using for fills or stokes."
+          }
+        },
+        "SecondaryInverted": {
+          "value": "{Core.Color.Grey.0.solid}",
+          "type": "color",
+          "description": "✅ Use for secondary content of inverterted components. \n❌ Never apply on non inverted components."
+        },
+        "TertiaryInverted": {
+          "value": "{Core.Color.Grey.35.solid}",
+          "type": "color",
+          "description": "✅ Use for tertiary content of inverterted components. \n❌ Never apply on non inverted components."
+        },
+        "QuaternaryInverted": {
+          "value": "{Core.Color.Black.opa20}",
+          "type": "color",
+          "description": "✅ Use for low priority elements of inverterted components. \n❌ Never apply on non inverted components. Avoid using for text."
+        }
+      },
+      "Graph": {
+        "Temperature": {
+          "Cold": {
+            "value": "{Core.Color.Blue.200.solid}",
+            "type": "color",
+            "description": "✅ Use for fills or strokes on UI which configures or displays temperature settings (e.g. air condition, seat heating).  \n❌ Avoid using for content."
+          },
+          "Hot": {
+            "value": "{Core.Color.Red.200.solid}",
+            "type": "color",
+            "description": "✅ Use for fills or strokes on UI which configures or displays temperature settings (e.g. air condition, seat heating).  \n❌ Avoid using for content."
+          }
+        },
+        "Charging": {
+          "value": "{Core.Color.PaleGreen.100.solid}",
+          "type": "color",
+          "description": "✅ Use for fills or strokes on UI which configures or displays charging settings or status.  \n❌ Avoid using for content."
+        }
+      },
+      "ShadowColor": {
+        "Primary": {
+          "value": "{Core.Color.Black.opa30}",
+          "type": "color",
+          "description": "✅ Use for core shadow"
+        },
+        "Secondary": {
+          "value": "{Core.Color.Black.opa15}",
+          "type": "color",
+          "description": "✅ Use for cast shadow"
+        }
+      }
+    },
+    "Opacity": {
+      "100%": {
+        "value": "{Core.Opacity.100%}",
+        "type": "opacity"
+      },
+      "0%": {
+        "value": "{Core.Opacity.0%}",
+        "type": "opacity"
+      },
+      "10%": {
+        "value": "{Core.Opacity.10%}",
+        "type": "opacity"
+      },
+      "20%": {
+        "value": "{Core.Opacity.20%}",
+        "type": "opacity"
+      },
+      "30%": {
+        "value": "{Core.Opacity.30%}",
+        "type": "opacity"
+      },
+      "40%": {
+        "value": "{Core.Opacity.40%}",
+        "type": "opacity"
+      },
+      "50%": {
+        "value": "{Core.Opacity.50%}",
+        "type": "opacity"
+      },
+      "60%": {
+        "value": "{Core.Opacity.60%}",
+        "type": "opacity"
+      },
+      "70%": {
+        "value": "{Core.Opacity.70%}",
+        "type": "opacity"
+      },
+      "80%": {
+        "value": "{Core.Opacity.80%}",
+        "type": "opacity"
+      },
+      "90%": {
+        "value": "{Core.Opacity.90%}",
+        "type": "opacity"
+      },
+      "Disabled": {
+        "value": "{Core.Opacity.30%}",
+        "type": "opacity",
+        "description": "✅ Use to reduce opacity of disabled components."
+      }
+    },
+    "Boolean": {
+      "CurrentThemeIsLight": {
+        "value": "false",
+        "type": "boolean",
+        "description": "This is a boolean variable to switch things on if the current theme is \"Light\".  The value is:\n- \"true\" if current theme is \"Light\"\n- \"false\" if current theme is \"Dark\""
+      },
+      "CurrentThemeIsDark": {
+        "value": "true",
+        "type": "boolean",
+        "description": "This is a boolean variable to switch things on if the current theme is \"Dark\".  The value is:\n- \"false\" if current theme is \"Light\"\n- \"true\" if current theme is \"Dark\""
+      }
+    }
+  }
+}

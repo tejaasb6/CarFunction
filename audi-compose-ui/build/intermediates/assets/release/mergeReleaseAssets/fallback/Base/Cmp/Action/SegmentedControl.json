@@ -1,0 +1,282 @@
+{
+  "Cmp": {
+    "Color": {
+      "Action": {
+        "SegmentedControl": {
+          "Unit": {
+            "Unselected": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Tertiary}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Label": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                },
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Selected": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Selected.Strong}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Bold.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Label": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  }
+                },
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  }
+                }
+              }
+            }
+          },
+          "Content": {
+            "Label": {
+              "Default": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            }
+          },
+          "Container": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Secondary}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Medium}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Action": {
+        "SegmentedControl": {
+          "Unit": {
+            "Unselected": {
+              "Label": {
+                "value": "{Sem.Typography.Label.Order1.Normal}",
+                "type": "typography"
+              }
+            },
+            "Selected": {
+              "Label": {
+                "value": "{Sem.Typography.Label.Order1.Bold}",
+                "type": "typography"
+              }
+            }
+          },
+          "Label": {
+            "value": "{Sem.Typography.Label.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Action": {
+        "SegmentedControl": {
+          "Unit": {
+            "TouchTarget": {
+              "Padding": {
+                "value": "{Sem.Space.Fixed.100}",
+                "type": "spacing"
+              }
+            },
+            "StateLayer": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.150}",
+                "type": "spacing"
+              },
+              "H-Padding": {
+                "value": "{Sem.Space.Fixed.450}",
+                "type": "spacing"
+              },
+              "V-Padding": {
+                "value": "{Sem.Space.Fixed.200}",
+                "type": "spacing"
+              }
+            }
+          },
+          "Label": {
+            "B-Padding": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            }
+          },
+          "Wrapper": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.0}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Action": {
+        "SegmentedControl": {
+          "Unit": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.2000}",
+              "type": "sizing"
+            },
+            "MinWidth": {
+              "value": "{Sem.Size.Fixed.2000}",
+              "type": "sizing"
+            },
+            "TouchTarget": {
+              "MinWidth": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              },
+              "Height": {
+                "value": "{Sem.Size.TouchTarget.MD}",
+                "type": "sizing"
+              }
+            }
+          },
+          "Wrapper": {
+            "Height": {
+              "value": "{Sem.Size.VisualReduction}",
+              "type": "sizing"
+            }
+          },
+          "Height": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Action": {
+        "SegmentedControl": {
+          "Unit": {
+            "value": "{Sem.BorderRadius.MD}",
+            "type": "borderRadius"
+          },
+          "Wrapper": {
+            "value": "{Sem.BorderRadius.MD}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Action": {
+        "SegmentedControl": {
+          "Wrapper": {
+            "value": "{Sem.BorderWidth.Group.Idle}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Action": {
+        "SegmentedControl": {
+          "Wrapper": {
+            "value": "{Sem.Blur.Interactive}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}

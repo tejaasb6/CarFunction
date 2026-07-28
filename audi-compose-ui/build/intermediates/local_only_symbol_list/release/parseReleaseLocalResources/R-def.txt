@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+drawable arrowdown
+drawable arrowup
+drawable checkboxcontrol
+drawable e71e_button_plus
+drawable e71f_button_minus
+drawable error
+drawable external_link
+drawable exxx_interactive_placeholder
+drawable ic_checkbox_warning
+drawable icon
+drawable triangle
+font auditype_bold_4_03
+font auditype_bold_italic_4_03
+font auditype_extended_bold_4_03
+font auditype_extended_bold_italic_4_03
+font auditype_extended_italic_4_03
+font auditype_extended_normal_4_03
+font auditype_italic_4_03
+font auditype_normal_4_03
+font auditype_wide_bold_4_03
+font auditype_wide_light_4_03
+font auditype_wide_normal_4_03

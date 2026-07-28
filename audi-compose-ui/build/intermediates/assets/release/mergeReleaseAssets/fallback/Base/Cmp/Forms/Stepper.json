@@ -1,0 +1,98 @@
+{
+  "Cmp": {
+    "Color": {
+      "Forms": {
+        "Stepper": {
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Secondary}",
+              "type": "color"
+            },
+            "Stroke": {
+              "Idle": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Stroke.Bold}",
+                "type": "color"
+              }
+            }
+          },
+          "Content": {
+            "Label": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            },
+            "Icon": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Disabled": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Forms": {
+        "Stepper": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Max}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "Stepper": {
+          "Gap": {
+            "value": "{Sem.Space.Fixed.150}",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Forms": {
+        "Stepper": {
+          "StateLayer": {
+            "Height": {
+              "value": "{Sem.Size.VisualReduction}",
+              "type": "sizing"
+            }
+          },
+          "MinHeight": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          },
+          "MinWidth": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Forms": {
+        "Stepper": {
+          "Default": {
+            "value": "{Sem.Blur.Interactive}",
+            "type": "dimension"
+          }
+        }
+      }
+    }
+  }
+}

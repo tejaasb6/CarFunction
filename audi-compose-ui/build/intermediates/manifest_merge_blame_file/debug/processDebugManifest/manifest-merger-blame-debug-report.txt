@@ -1,0 +1,38 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.ui.audi" >
+5
+6    <uses-sdk android:minSdkVersion="26" />
+6-->INJECTED
+6-->INJECTED
+7
+8    <queries>
+8-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:5:5-7:15
+9        <provider android:authorities="com.ui.themeprovider" />
+9-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:6:9-64
+9-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:6:19-61
+10    </queries>
+11
+12    <application>
+12-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:9:5-19:19
+13        <provider
+13-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:10:9-18:20
+14            android:name="androidx.startup.InitializationProvider"
+14-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:11:13-67
+15            android:authorities="${applicationId}.androidx-startup"
+15-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:12:13-68
+16            android:exported="false"
+16-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:13:13-37
+17            tools:node="merge" >
+17-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:14:13-31
+18            <meta-data
+18-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:15:13-17:52
+19                android:name="com.ui.audi.AudiThemeInitializer"
+19-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:16:17-64
+20                android:value="androidx.startup" />
+20-->/home/tejasb6/AndroidStudioProjects/CarFunction/audi-compose-ui/src/main/AndroidManifest.xml:17:17-49
+21        </provider>
+22    </application>
+23
+24</manifest>

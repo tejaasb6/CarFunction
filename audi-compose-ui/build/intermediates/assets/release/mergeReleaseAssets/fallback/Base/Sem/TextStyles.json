@@ -1,0 +1,410 @@
+{
+  "Sem": {
+    "Typography": {
+      "Display": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Display}",
+              "fontWeight": "{Sem.FontWeight.Display.Normal}",
+              "fontSize": "{Sem.FontSize.50}",
+              "lineHeight": "{Sem.LineHeight.50.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "disp-ord1-nor"
+          }
+        }
+      },
+      "Headline": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Headline}",
+              "fontWeight": "{Sem.FontWeight.Headline.Normal}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "hl-ord1-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Headline}",
+              "fontWeight": "{Sem.FontWeight.Headline.Bold}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "hl-ord1-bld"
+          }
+        },
+        "Order2": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Headline}",
+              "fontWeight": "{Sem.FontWeight.Headline.Normal}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "hl-ord2-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Headline}",
+              "fontWeight": "{Sem.FontWeight.Headline.Bold}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "hl-ord2-bld"
+          }
+        }
+      },
+      "Copy": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord1-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord1-bld"
+          }
+        },
+        "Order2": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord2-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord2-bld"
+          }
+        },
+        "Order3": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord3-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord3-bld"
+          }
+        },
+        "Order4": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord4-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord4-bld"
+          }
+        }
+      },
+      "Caption": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "Use for captions and errors"
+          }
+        }
+      },
+      "Link": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord1-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord1-bld"
+          }
+        },
+        "Order2": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord2-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord2-bld"
+          }
+        },
+        "Order3": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord3-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord3-bld"
+          }
+        },
+        "Order4": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord4-nor"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Normal}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "Underline"
+            },
+            "type": "typography",
+            "description": "copy-ord4-bld"
+          }
+        }
+      },
+      "Label": {
+        "Order1": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord1-shrt"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.200}",
+              "lineHeight": "{Sem.LineHeight.200.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord1-shrt-bold"
+          }
+        },
+        "Order2": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord2-shrt"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.300}",
+              "lineHeight": "{Sem.LineHeight.300.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord2-shrt-bold"
+          }
+        },
+        "Order3": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord3-shrt"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.400}",
+              "lineHeight": "{Sem.LineHeight.400.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord3-shrt-bold"
+          }
+        },
+        "Order4": {
+          "Normal": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Normal}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord4-shrt"
+          },
+          "Bold": {
+            "value": {
+              "fontFamily": "{Sem.FontFamily.Copy}",
+              "fontWeight": "{Sem.FontWeight.Copy.Bold}",
+              "fontSize": "{Sem.FontSize.500}",
+              "lineHeight": "{Sem.LineHeight.500.Short}",
+              "letterSpacing": "{Sem.LetterSpacing.None}",
+              "textDecoration": "None"
+            },
+            "type": "typography",
+            "description": "copy-ord4-shrt-bold"
+          }
+        }
+      }
+    }
+  }
+}

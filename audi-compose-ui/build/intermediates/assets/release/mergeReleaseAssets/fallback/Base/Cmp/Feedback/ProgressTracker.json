@@ -1,0 +1,236 @@
+{
+  "Cmp": {
+    "Color": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "Surface": {
+                "Fill": {
+                  "Unfinished": {
+                    "value": "{Sem.Color.Fill.Secondary}",
+                    "type": "color"
+                  },
+                  "InProgress": {
+                    "value": "{Sem.Color.Fill.Selected.Strong}",
+                    "type": "color"
+                  },
+                  "Finished": {
+                    "value": "{Sem.Color.Fill.Secondary}",
+                    "type": "color"
+                  },
+                  "Numeric": {
+                    "value": "{Sem.Color.Fill.Secondary}",
+                    "type": "color"
+                  },
+                  "Skipped": {
+                    "value": "{Sem.Color.Fill.Secondary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Fill.Secondary}",
+                    "type": "color"
+                  }
+                },
+                "Stroke": {
+                  "Unfinished": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "InProgress": {
+                    "value": "{Sem.Color.Fill.Selected.Strong}",
+                    "type": "color"
+                  },
+                  "Finished": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "Numeric": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "Skipped": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  }
+                }
+              },
+              "Content": {
+                "Marker": {
+                  "Unfinished": {
+                    "value": "{Sem.Color.Content.Transparent}",
+                    "type": "color"
+                  },
+                  "InProgress": {
+                    "value": "{Sem.Color.Content.PrimaryStatic}",
+                    "type": "color"
+                  },
+                  "Finished": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Numeric": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Skipped": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Transparent}",
+                    "type": "color"
+                  }
+                },
+                "Label": {
+                  "Default": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Connector": {
+              "Fill": {
+                "value": "{Sem.Color.Content.Quaternary}",
+                "type": "color"
+              }
+            }
+          },
+          "Content": {
+            "Label": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Content": {
+            "Label": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            }
+          },
+          "Bar": {
+            "Indicator": {
+              "Content": {
+                "Label": {
+                  "Default": {
+                    "value": "{Sem.Typography.Copy.Order3.Normal}",
+                    "type": "typography"
+                  },
+                  "InProgress": {
+                    "value": "{Sem.Typography.Copy.Order3.Bold}",
+                    "type": "typography"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "value": "{Sem.BorderWidth.SM}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "Surface": {
+                "All": {
+                  "value": "{Sem.Size.Fixed.900}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "Connector": {
+              "Height": {
+                "value": "{Sem.Size.Fixed.100}",
+                "type": "sizing"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "Gap": {
+                "value": "{Sem.Space.Fixed.50}",
+                "type": "spacing"
+              }
+            },
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            }
+          },
+          "Gap": {
+            "value": "{Sem.Space.Fixed.50}",
+            "type": "spacing"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "Default": {
+                "value": "{Sem.BorderRadius.Max}",
+                "type": "borderRadius"
+              },
+              "Content": {
+                "Marker": {
+                  "value": "{Sem.BorderRadius.Max}",
+                  "type": "borderRadius"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Opacity": {
+      "Feedback": {
+        "ProgressTracker": {
+          "Bar": {
+            "Indicator": {
+              "Default": {
+                "value": "1",
+                "type": "opacity"
+              },
+              "NotPossible": {
+                "value": "{Sem.Opacity.Disabled}",
+                "type": "opacity"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "Cmp": {
+    "Color": {
+      "DataDisplay": {
+        "Tag": {
+          "Default": {
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Container}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Fill.Transparent}",
+                "type": "color"
+              }
+            },
+            "OpacityLayer": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Transparent}",
+                "type": "color"
+              }
+            },
+            "Text": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          },
+          "Prominent": {
+            "OpacityLayer": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Transparent}",
+                "type": "color"
+              }
+            },
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Prominent}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Stroke.Prominent}",
+                "type": "color"
+              }
+            },
+            "Text": {
+              "value": "{Sem.Color.Content.PrimaryStatic}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.PrimaryStatic}",
+              "type": "color"
+            }
+          },
+          "OnImage": {
+            "OpacityLayer": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Secondary}",
+                "type": "color"
+              }
+            },
+            "Surface": {
+              "Fill": {
+                "value": "{Sem.Color.Fill.Container}",
+                "type": "color"
+              },
+              "Stroke": {
+                "value": "{Sem.Color.Fill.Transparent}",
+                "type": "color"
+              }
+            },
+            "Text": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Icon": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "DataDisplay": {
+        "Tag": {
+          "MD": {
+            "Label": {
+              "value": "{Sem.Typography.Label.Order1.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "DataDisplay": {
+        "Tag": {
+          "MD": {
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.100}",
+              "type": "spacing"
+            },
+            "Gap": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            },
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "DataDisplay": {
+        "Tag": {
+          "Default": {
+            "value": "{Sem.Blur.Interactive}",
+            "type": "dimension"
+          }
+        }
+      }
+    },
+    "Size": {
+      "DataDisplay": {
+        "Tag": {
+          "MD": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.1600}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "DataDisplay": {
+        "Tag": {
+          "MD": {
+            "Default": {
+              "value": "{Sem.BorderRadius.MD}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "DataDisplay": {
+        "Tag": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    }
+  }
+}

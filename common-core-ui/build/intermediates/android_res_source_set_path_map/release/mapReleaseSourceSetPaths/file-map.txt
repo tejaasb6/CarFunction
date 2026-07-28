@@ -1,0 +1,9 @@
+com.ui.core.common-core-ui-pngs-0 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/generated/res/pngs/release
+com.ui.core.common-core-ui-updated_navigation_xml-1 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/generated/updated_navigation_xml/release
+com.ui.core.common-core-ui-mergeReleaseResources-2 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.ui.core.common-core-ui-mergeReleaseResources-3 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.ui.core.common-core-ui-release-4 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/intermediates/merged_res/release/mergeReleaseResources
+com.ui.core.common-core-ui-release-5 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/build/intermediates/packaged_res/release/packageReleaseResources
+com.ui.core.common-core-ui-main-6 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/src/main/res
+com.ui.core.common-core-ui-release-7 /home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui/src/release/res
+gradleHome-0 /home/tejasb6/.gradle

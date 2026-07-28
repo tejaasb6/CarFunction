@@ -1,0 +1,140 @@
+{
+  "Cmp": {
+    "Color": {
+      "Navigation": {
+        "Accordion": {
+          "Surface": {
+            "Fill": {
+              "Idle": {
+                "value": "{Sem.Color.Fill.Tertiary}",
+                "type": "color"
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              }
+            },
+            "Stroke": {
+              "Idle": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Stroke.Transparent}",
+                "type": "color"
+              }
+            }
+          },
+          "Content": {
+            "Label": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            },
+            "Caption": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Tertiary}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Content.Tertiary}",
+                "type": "color"
+              }
+            },
+            "Icon": {
+              "Idle": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              },
+              "Pressed": {
+                "value": "{Sem.Color.Content.Primary}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Navigation": {
+        "Accordion": {
+          "Label": {
+            "value": "{Sem.Typography.Copy.Order1.Normal}",
+            "type": "typography"
+          },
+          "Subline": {
+            "value": "{Sem.Typography.Copy.Order2.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Size": {
+      "Navigation": {
+        "Accordion": {
+          "IconWrapper": {
+            "All": {
+              "value": "{Sem.Size.Fixed.2800}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Navigation": {
+        "Accordion": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Navigation.NavigationItem}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Navigation": {
+        "Accordion": {
+          "Default": {
+            "value": "{Sem.BorderWidth.None}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Navigation": {
+        "Accordion": {
+          "LabelGroup": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            },
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          },
+          "StateLayer": {
+            "R-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            }
+          },
+          "SlotWrapper": {
+            "L-Padding": {
+              "value": "{Sem.Space.Fixed.500}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

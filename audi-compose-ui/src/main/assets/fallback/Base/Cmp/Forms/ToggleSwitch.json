@@ -1,0 +1,298 @@
+{
+  "Cmp": {
+    "Color": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Container": {
+            "Selected": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Signal.Positive}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  }
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Unselected": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Input}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  }
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Tertiary}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Content.Tertiary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Tertiary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Tertiary}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Hover": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Hover}",
+                  "type": "color"
+                },
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "Handle": {
+            "Selected": {
+              "Content": {
+                "Fill": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.OnSignal.Positive}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Unselected": {
+              "Content": {
+                "Fill": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Tertiary}",
+                    "type": "color"
+                  },
+                  "Hover": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                }
+              }
+            }
+          },
+          "Label": {
+            "Idle": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Loading": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            },
+            "Disabled": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          },
+          "Caption": {
+            "Idle": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Hover": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Pressed": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Loading": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Disabled": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Caption": {
+            "value": "{Sem.Typography.Caption.Order1.Normal}",
+            "type": "typography"
+          },
+          "Label": {
+            "value": "{Sem.Typography.Label.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Default": {
+            "value": "{Sem.BorderRadius.Max}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Default": {
+            "Idle": {
+              "value": "{Sem.BorderWidth.Forms.Idle}",
+              "type": "borderWidth"
+            },
+            "Hover": {
+              "value": "{Sem.BorderWidth.Forms.Hover}",
+              "type": "borderWidth"
+            },
+            "Pressed": {
+              "value": "{Sem.BorderWidth.Forms.Pressed}",
+              "type": "borderWidth"
+            },
+            "Disabled": {
+              "value": "{Sem.BorderWidth.Forms.Idle}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Caption": {
+            "T-Padding": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            },
+            "L-Padding": {
+              "value": "{Sem.Space.Fixed.1400}",
+              "type": "spacing"
+            },
+            "R-Padding": {
+              "value": "{Sem.Space.Fixed.1400}",
+              "type": "spacing"
+            }
+          },
+          "Control": {
+            "Padding": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Forms": {
+        "ToggleSwitch": {
+          "Handle": {
+            "Height": {
+              "value": "{Sem.Size.Fixed.900}",
+              "type": "sizing"
+            },
+            "Width": {
+              "value": "{Sem.Size.Fixed.900}",
+              "type": "sizing"
+            }
+          },
+          "TouchTargetSize": {
+            "value": "{Sem.Size.TouchTarget.MD}",
+            "type": "sizing"
+          }
+        }
+      }
+    }
+  }
+}

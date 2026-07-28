@@ -1,0 +1,112 @@
+{
+  "Cmp": {
+    "Color": {
+      "Layer": {
+        "Dialog": {
+          "Content": {
+            "Headline": {
+              "value": "{Sem.Color.Content.Secondary}",
+              "type": "color"
+            }
+          },
+          "Surface": {
+            "Fill": {
+              "value": "{Sem.Color.Fill.Canvas}",
+              "type": "color"
+            },
+            "Stroke": {
+              "value": "{Sem.Color.Stroke.Transparent}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Layer": {
+        "Dialog": {
+          "Headline": {
+            "value": "{Sem.Typography.Headline.Order1.Normal}",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "Shadow": {
+      "Layer": {
+        "Dialog": {
+          "Default": {
+            "value": "{Sem.Shadow.Elevation.Level3}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Layer": {
+        "Dialog": {
+          "Default": {
+            "value": "{Sem.BorderWidth.Group.Idle}",
+            "type": "borderWidth"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Layer": {
+        "Dialog": {
+          "Default": {
+            "value": "{Sem.BorderRadius.MD}",
+            "type": "borderRadius"
+          }
+        }
+      }
+    },
+    "Space": {
+      "Layer": {
+        "Dialog": {
+          "HeadlineSection": {
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            },
+            "HeadlineWrapper": {
+              "MinHeight": {
+                "value": "{Sem.Size.Fixed.2800}",
+                "type": "sizing"
+              }
+            }
+          },
+          "ContentSection": {
+            "T-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            },
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            },
+            "B-Padding": {
+              "value": "{Sem.Space.Fixed.200}",
+              "type": "spacing"
+            }
+          },
+          "FooterSection": {
+            "T-Padding": {
+              "value": "{Sem.Space.Fixed.0}",
+              "type": "spacing"
+            },
+            "H-Padding": {
+              "value": "{Sem.Space.Fixed.400}",
+              "type": "spacing"
+            },
+            "B-Padding": {
+              "value": "{Sem.Space.Fixed.300}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

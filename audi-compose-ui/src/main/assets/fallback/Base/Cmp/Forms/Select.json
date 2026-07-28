@@ -1,0 +1,16 @@
+{
+  "Cmp": {
+    "Shadow": {
+      "Forms": {
+        "Select": {
+          "Menu": {
+            "Default": {
+              "value": "{Sem.Shadow.Elevation.Level2}",
+              "type": "boxShadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}

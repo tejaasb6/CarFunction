@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="/home/tejasb6/AndroidStudioProjects/CarFunction/common-core-ui"
+    name=":common-core-ui"
+    type="LIBRARY"
+    maven="CarFunction:common-core-ui:unspecified"
+    agpVersion="9.3.1"
+    buildFolder="build"
+    bootClassPath="/home/tejasb6/Android/Sdk/platforms/android-36/android.jar:/home/tejasb6/Android/Sdk/build-tools/36.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-36"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

@@ -1,0 +1,476 @@
+{
+  "Sem": {
+    "Blur": {
+      "SM": {
+        "value": "{Core.DimensionPX.10}",
+        "type": "dimension"
+      },
+      "MD": {
+        "value": "{Core.DimensionPX.16}",
+        "type": "dimension"
+      },
+      "LG": {
+        "value": "{Core.DimensionPX.60}",
+        "type": "dimension"
+      },
+      "Card": {
+        "value": "{Core.DimensionPX.60}",
+        "type": "dimension",
+        "description": "use on card component to add blur to the background"
+      },
+      "Interactive": {
+        "value": "{Core.DimensionPX.16}",
+        "type": "dimension",
+        "description": "Use to ensure readybility of compact (typically interactive) components contents. Do not apply on group or layer compoents as Modal, Tile, Card, Infobox. \nUseCase: Button Secondary/Tertiary; Chip; Tag"
+      },
+      "Cover": {
+        "value": "{Core.DimensionPX.10}",
+        "type": "dimension",
+        "description": "Use to blur entire layouts our layout sections\nUseCase: Scim"
+      }
+    },
+    "BorderRadius": {
+      "None": {
+        "value": "{Core.DimensionPX.0}",
+        "type": "borderRadius",
+        "description": "Apply on elements that shouldn't be rounded"
+      },
+      "MD": {
+        "value": "{Core.DimensionPX.4}",
+        "type": "borderRadius"
+      },
+      "Max": {
+        "value": "{Core.DimensionPX.999}",
+        "type": "borderRadius",
+        "description": "Apply on fully rounded elements, like buttons or search field, when you want them to stand out more and get extra visual attention"
+      },
+      "Form": {
+        "Input": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "borderRadius",
+          "description": "Use for Form Input Surfaces"
+        },
+        "Control": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "borderRadius",
+          "description": "Use for Form Control Surfaces"
+        }
+      },
+      "Group": {
+        "value": "{Core.DimensionPX.4}",
+        "type": "borderRadius",
+        "description": "Use for containers as on Tile, Card, Segmented Control Container, Tooltip, Notification"
+      },
+      "Image": {
+        "value": "{Core.DimensionPX.4}",
+        "type": "borderRadius",
+        "description": "Use for images"
+      },
+      "Action": {
+        "Button": {
+          "value": "{Core.DimensionPX.999}",
+          "type": "borderRadius",
+          "description": "Use for Buttons"
+        }
+      },
+      "Navigation": {
+        "NavigationItem": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "borderRadius",
+          "description": "Use for naviation items as in: Tabs, BottomNavigationItem, NavigationItem, Pagination"
+        }
+      }
+    },
+    "BorderWidth": {
+      "SM": {
+        "value": "{Core.DimensionPX.1}",
+        "type": "borderWidth",
+        "description": "Use as fallback of none of the semantics apply"
+      },
+      "MD": {
+        "value": "{Core.DimensionPX.2}",
+        "type": "borderWidth",
+        "description": "Use as fallback of none of the semantics apply"
+      },
+      "LG": {
+        "value": "{Core.DimensionPX.3}",
+        "type": "borderWidth",
+        "description": "Use as fallback of none of the semantics apply"
+      },
+      "XL": {
+        "value": "{Core.DimensionPX.4}",
+        "type": "borderWidth",
+        "description": "Use as fallback of none of the semantics apply"
+      },
+      "None": {
+        "value": "{Core.DimensionPX.0}",
+        "type": "borderWidth"
+      },
+      "FocusRing": {
+        "value": "{Core.DimensionPX.4}",
+        "type": "borderWidth",
+        "description": "✅ Use for Focus Rings"
+      },
+      "Action": {
+        "Idle": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Buttons in idle state"
+        },
+        "Hover": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Buttons in hover state"
+        },
+        "Pressed": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "borderWidth",
+          "description": "✅ Use for Buttons in pressed state"
+        }
+      },
+      "Forms": {
+        "Idle": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Formfield or FormControl in idle state"
+        },
+        "Hover": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Formfield or FormControl in hover state"
+        },
+        "Pressed": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "borderWidth",
+          "description": "✅ Use for Formfield or FormControl in pressed state"
+        },
+        "Active": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "borderWidth",
+          "description": "✅ Use for Formfield in active state"
+        }
+      },
+      "Group": {
+        "Idle": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Group and Layer components in idle state"
+        },
+        "Hover": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "borderWidth",
+          "description": "✅ Use for Group and Layer components in hover state"
+        },
+        "Pressed": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "borderWidth",
+          "description": "✅ Use for Group and Layer components in pressed state"
+        }
+      },
+      "Navigation": {
+        "Underline": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "borderWidth",
+          "description": "UseCase: Selected Tab, Navigation Items etc."
+        }
+      }
+    },
+    "Size": {
+      "Fixed": {
+        "0": {
+          "value": "{Core.DimensionPX.0}",
+          "type": "sizing",
+          "description": "0px | @160dpi = 0mm"
+        },
+        "25": {
+          "value": "{Core.DimensionPX.1}",
+          "type": "sizing",
+          "description": "1px | @160dpi = 0,15875mmmm"
+        },
+        "50": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "sizing",
+          "description": "2px | @160dpi = 0,3175mm"
+        },
+        "75": {
+          "value": "{Core.DimensionPX.3}",
+          "type": "sizing",
+          "description": "3px | @160dpi = 0,47625mm"
+        },
+        "100": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "sizing",
+          "description": "4px | @160dpi = 0,635mm"
+        },
+        "125": {
+          "value": "{Core.DimensionPX.5}",
+          "type": "sizing",
+          "description": "5px | @160dpi = 0,79375mm"
+        },
+        "150": {
+          "value": "{Core.DimensionPX.6}",
+          "type": "sizing",
+          "description": "6px | @160dpi = 0,9525mm"
+        },
+        "200": {
+          "value": "{Core.DimensionPX.8}",
+          "type": "sizing",
+          "description": "8px | @160dpi = 1,27mm"
+        },
+        "250": {
+          "value": "{Core.DimensionPX.10}",
+          "type": "sizing",
+          "description": "10px | @160dpi = 1,5875mm"
+        },
+        "300": {
+          "value": "{Core.DimensionPX.12}",
+          "type": "sizing",
+          "description": "12px | @160dpi = 1,905mm"
+        },
+        "400": {
+          "value": "{Core.DimensionPX.16}",
+          "type": "sizing",
+          "description": "16px | @160dpi = 2,54mm"
+        },
+        "450": {
+          "value": "{Core.DimensionPX.18}",
+          "type": "sizing",
+          "description": "18px | @160dpi = 2,8575mm"
+        },
+        "500": {
+          "value": "{Core.DimensionPX.20}",
+          "type": "sizing",
+          "description": "20px | @160dpi = 3,175mm"
+        },
+        "600": {
+          "value": "{Core.DimensionPX.24}",
+          "type": "sizing",
+          "description": "24px | @160dpi = 3,81mm"
+        },
+        "700": {
+          "value": "{Core.DimensionPX.28}",
+          "type": "sizing",
+          "description": "28px | @160dpi = 4,445mm"
+        },
+        "800": {
+          "value": "{Core.DimensionPX.32}",
+          "type": "sizing",
+          "description": "32px | @160dpi = 5,08mm"
+        },
+        "900": {
+          "value": "{Core.DimensionPX.36}",
+          "type": "sizing",
+          "description": "36px | @160dpi = 5,715mm"
+        },
+        "1000": {
+          "value": "{Core.DimensionPX.40}",
+          "type": "sizing",
+          "description": "40px | @160dpi = 6,35mm"
+        },
+        "1200": {
+          "value": "{Core.DimensionPX.48}",
+          "type": "sizing",
+          "description": "48px | @160dpi = 7,62mm"
+        },
+        "1400": {
+          "value": "{Core.DimensionPX.56}",
+          "type": "sizing",
+          "description": "56px | @160dpi = 8,89mm"
+        },
+        "1600": {
+          "value": "{Core.DimensionPX.64}",
+          "type": "sizing",
+          "description": "64px | @160dpi = 10,16mm"
+        },
+        "1800": {
+          "value": "{Core.DimensionPX.72}",
+          "type": "sizing",
+          "description": "72px | @160dpi = 11,43mm"
+        },
+        "2000": {
+          "value": "{Core.DimensionPX.80}",
+          "type": "sizing",
+          "description": "80px | @160dpi = 12,7mm"
+        },
+        "2100": {
+          "value": "{Core.DimensionPX.84}",
+          "type": "sizing",
+          "description": "84px | @160dpi = 13,335mm"
+        },
+        "2400": {
+          "value": "{Core.DimensionPX.96}",
+          "type": "sizing",
+          "description": "96px | @160dpi = 15,24mm"
+        },
+        "2600": {
+          "value": "{Core.DimensionPX.104}",
+          "type": "sizing",
+          "description": "104px | @160dpi = 16,51mm"
+        },
+        "2700": {
+          "value": "{Core.DimensionPX.108}",
+          "type": "sizing",
+          "description": "108px | @160dpi = 17,145mm"
+        },
+        "2800": {
+          "value": "{Core.DimensionPX.112}",
+          "type": "sizing",
+          "description": "112px | @160dpi = 17,78mm"
+        },
+        "3000": {
+          "value": "{Core.DimensionPX.120}",
+          "type": "sizing",
+          "description": "120px | @160dpi = 19,05mm"
+        },
+        "3200": {
+          "value": "{Core.DimensionPX.128}",
+          "type": "sizing",
+          "description": "128px | @160dpi = 20,32mm"
+        },
+        "3400": {
+          "value": "{Core.DimensionPX.136}",
+          "type": "sizing",
+          "description": "136px | @160dpi = 21,59mm"
+        },
+        "3600": {
+          "value": "{Core.DimensionPX.144}",
+          "type": "sizing",
+          "description": "144px | @160dpi = 22,86mm"
+        },
+        "4800": {
+          "value": "{Core.DimensionPX.192}",
+          "type": "sizing",
+          "description": "192px | @160dpi = 30,48mm"
+        },
+        "6000": {
+          "value": "{Core.DimensionPX.240}",
+          "type": "sizing",
+          "description": "240px | @160dpi = 38,1mm"
+        },
+        "8000": {
+          "value": "{Core.DimensionPX.320}",
+          "type": "sizing",
+          "description": "320px | @160dpi = 50,8mm"
+        },
+        "Max": {
+          "value": "{Core.DimensionPX.999}",
+          "type": "sizing",
+          "description": "999px | @160dpi = 158,59125mm"
+        }
+      },
+      "TouchTarget": {
+        "MD": {
+          "value": "{Core.DimensionPX.112}",
+          "type": "sizing",
+          "description": "Default minimum touch target size."
+        },
+        "SM": {
+          "value": "{Core.DimensionPX.84}",
+          "type": "sizing",
+          "description": "Minimum touch target size for very dense components."
+        }
+      },
+      "VisualReduction": {
+        "value": "{Core.DimensionPX.96}",
+        "type": "sizing",
+        "description": "Visual reduction for interactive elements"
+      }
+    },
+    "Space": {
+      "Fixed": {
+        "0": {
+          "value": "{Core.DimensionPX.0}",
+          "type": "spacing"
+        },
+        "25": {
+          "value": "{Core.DimensionPX.2}",
+          "type": "spacing"
+        },
+        "50": {
+          "value": "{Core.DimensionPX.4}",
+          "type": "spacing"
+        },
+        "100": {
+          "value": "{Core.DimensionPX.8}",
+          "type": "spacing"
+        },
+        "150": {
+          "value": "{Core.DimensionPX.12}",
+          "type": "spacing"
+        },
+        "200": {
+          "value": "{Core.DimensionPX.16}",
+          "type": "spacing"
+        },
+        "250": {
+          "value": "{Core.DimensionPX.20}",
+          "type": "spacing"
+        },
+        "300": {
+          "value": "{Core.DimensionPX.24}",
+          "type": "spacing"
+        },
+        "350": {
+          "value": "{Core.DimensionPX.28}",
+          "type": "spacing"
+        },
+        "400": {
+          "value": "{Core.DimensionPX.32}",
+          "type": "spacing"
+        },
+        "450": {
+          "value": "{Core.DimensionPX.36}",
+          "type": "spacing"
+        },
+        "500": {
+          "value": "{Core.DimensionPX.40}",
+          "type": "spacing"
+        },
+        "600": {
+          "value": "{Core.DimensionPX.48}",
+          "type": "spacing"
+        },
+        "700": {
+          "value": "{Core.DimensionPX.56}",
+          "type": "spacing"
+        },
+        "800": {
+          "value": "{Core.DimensionPX.64}",
+          "type": "spacing"
+        },
+        "900": {
+          "value": "{Core.DimensionPX.72}",
+          "type": "spacing"
+        },
+        "1000": {
+          "value": "{Core.DimensionPX.80}",
+          "type": "spacing"
+        },
+        "1200": {
+          "value": "{Core.DimensionPX.96}",
+          "type": "spacing"
+        },
+        "1400": {
+          "value": "{Core.DimensionPX.112}",
+          "type": "spacing"
+        },
+        "1600": {
+          "value": "{Core.DimensionPX.128}",
+          "type": "spacing"
+        },
+        "2000": {
+          "value": "{Core.DimensionPX.160}",
+          "type": "spacing"
+        },
+        "2200": {
+          "value": "{Core.DimensionPX.176}",
+          "type": "spacing"
+        },
+        "2600": {
+          "value": "{Core.DimensionPX.208}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}

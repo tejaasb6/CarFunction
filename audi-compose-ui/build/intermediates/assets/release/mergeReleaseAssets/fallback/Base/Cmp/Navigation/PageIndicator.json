@@ -1,0 +1,128 @@
+{
+  "Cmp": {
+    "Color": {
+      "Navigation": {
+        "PageIndicator": {
+          "Label": {
+            "Default": {
+              "value": "{Sem.Color.Content.Tertiary}",
+              "type": "color"
+            },
+            "Selected": {
+              "value": "{Sem.Color.Content.Primary}",
+              "type": "color"
+            }
+          },
+          "Indicator": {
+            "Surface": {
+              "Fill": {
+                "Unselected": {
+                  "value": "{Sem.Color.Content.Quaternary}",
+                  "type": "color"
+                },
+                "Selected": {
+                  "value": "{Sem.Color.Content.Primary}",
+                  "type": "color"
+                }
+              },
+              "Stroke": {
+                "Unselected": {
+                  "value": "{Sem.Color.Stroke.Bold}",
+                  "type": "color"
+                },
+                "Selected": {
+                  "value": "{Sem.Color.Stroke.Transparent}",
+                  "type": "color"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Navigation": {
+        "PageIndicator": {
+          "Label": {
+            "Default": {
+              "value": "{Sem.Typography.Label.Order2.Normal}",
+              "type": "typography"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Navigation": {
+        "PageIndicator": {
+          "Indicator": {
+            "Width": {
+              "value": "{Sem.Size.Fixed.600}",
+              "type": "sizing"
+            },
+            "Height": {
+              "value": "{Sem.Size.Fixed.600}",
+              "type": "sizing"
+            },
+            "Surface": {
+              "Width": {
+                "value": "{Sem.Size.Fixed.400}",
+                "type": "sizing"
+              },
+              "Height": {
+                "value": "{Sem.Size.Fixed.400}",
+                "type": "sizing"
+              }
+            }
+          },
+          "MinHeight": {
+            "value": "{Sem.Size.Fixed.1200}",
+            "type": "sizing"
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Navigation": {
+        "PageIndicator": {
+          "Indicator": {
+            "Surface": {
+              "Default": {
+                "value": "{Sem.BorderRadius.Max}",
+                "type": "borderRadius"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Navigation": {
+        "PageIndicator": {
+          "Indicator": {
+            "Surface": {
+              "Unselected": {
+                "value": "{Sem.BorderWidth.SM}",
+                "type": "borderWidth"
+              },
+              "Selected": {
+                "value": "{Sem.BorderWidth.None}",
+                "type": "borderWidth"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Navigation": {
+        "PageIndicator": {
+          "Gap": {
+            "value": "{Sem.Space.Fixed.100}",
+            "type": "spacing"
+          }
+        }
+      }
+    }
+  }
+}

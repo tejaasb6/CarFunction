@@ -1,0 +1,294 @@
+{
+  "Cmp": {
+    "Color": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "Primary": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Primary}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Strong.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.PrimaryInverted}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Secondary": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Secondary}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Strong}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Bold}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Label": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                },
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                }
+              }
+            },
+            "Tertiary": {
+              "Surface": {
+                "Fill": {
+                  "value": "{Sem.Color.Fill.Tertiary}",
+                  "type": "color"
+                },
+                "Stroke": {
+                  "Idle": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Stroke.Transparent}",
+                    "type": "color"
+                  }
+                }
+              },
+              "StateLayer": {
+                "Pressed": {
+                  "value": "{Sem.Color.StateLayer.Subtle.Pressed}",
+                  "type": "color"
+                }
+              },
+              "Content": {
+                "Icon": {
+                  "Idle": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Pressed": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  },
+                  "Disabled": {
+                    "value": "{Sem.Color.Content.Primary}",
+                    "type": "color"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Typography": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "MD": {
+              "Label": {
+                "value": "{Sem.Typography.Label.Order1.Normal}",
+                "type": "typography"
+              },
+              "Subline": {
+                "value": "{Sem.Typography.Label.Order4.Normal}",
+                "type": "typography"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Space": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "MD": {
+              "StateLayer": {
+                "H-Padding": {
+                  "value": "{Sem.Space.Fixed.450}",
+                  "type": "spacing"
+                }
+              },
+              "Label+Subline": {
+                "B-Padding": {
+                  "value": "{Sem.Space.Fixed.50}",
+                  "type": "spacing"
+                }
+              },
+              "Label+Icon": {
+                "T-Padding": {
+                  "value": "{Sem.Space.Fixed.25}",
+                  "type": "spacing"
+                }
+              },
+              "V-Padding": {
+                "value": "{Sem.Space.Fixed.25}",
+                "type": "spacing"
+              }
+            }
+          },
+          "ButtonWrapper": {
+            "V-Padding": {
+              "value": "{Sem.Space.Fixed.25}",
+              "type": "spacing"
+            }
+          },
+          "Surface": {
+            "Gap": {
+              "value": "{Sem.Space.Fixed.50}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    },
+    "Size": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "MD": {
+              "TouchTarget": {
+                "MinWidth": {
+                  "value": "{Sem.Size.TouchTarget.SM}",
+                  "type": "sizing"
+                },
+                "MinHeight": {
+                  "value": "{Sem.Size.TouchTarget.SM}",
+                  "type": "sizing"
+                }
+              },
+              "StateLayer": {
+                "MinHeight": {
+                  "value": "{Sem.Size.Fixed.2000}",
+                  "type": "sizing"
+                },
+                "MinWidth": {
+                  "value": "{Sem.Size.Fixed.2000}",
+                  "type": "sizing"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "BorderRadius": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "Default": {
+              "value": "{Sem.BorderRadius.MD}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    },
+    "BorderWidth": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "Idle": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            },
+            "Pressed": {
+              "value": "{Sem.BorderWidth.Action.Pressed}",
+              "type": "borderWidth"
+            },
+            "Disabled": {
+              "value": "{Sem.BorderWidth.Action.Idle}",
+              "type": "borderWidth"
+            }
+          }
+        }
+      }
+    },
+    "Blur": {
+      "Action": {
+        "Keypad": {
+          "Button": {
+            "Default": {
+              "value": "{Sem.Blur.Interactive}",
+              "type": "dimension"
+            }
+          }
+        }
+      }
+    }
+  }
+}
