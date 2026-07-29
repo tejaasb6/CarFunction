@@ -33,11 +33,6 @@ fun DrivingExteriorScreen(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun ComfortInteriorScreen(modifier: Modifier = Modifier) {
-    PlaceholderContent(title = "Comfort & Interior", modifier = modifier)
-}
-
-@Composable
 private fun PlaceholderContent(title: String, modifier: Modifier = Modifier) {
     Box(
         modifier = modifier.fillMaxSize(),

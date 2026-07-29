@@ -7,7 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.carfunction.presentation.mycar.MyCarScreen
 import com.example.carfunction.presentation.screens.ChargingScreen
-import com.example.carfunction.presentation.screens.ComfortInteriorScreen
+import com.example.carfunction.presentation.comfortinterior.ComfortInteriorScreen
 import com.example.carfunction.presentation.screens.DrivingAssistanceScreen
 import com.example.carfunction.presentation.screens.DrivingExteriorScreen
 
