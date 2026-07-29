@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_wide_light_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_wide_light_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_bold_italic_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_bold_italic_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_wide_normal_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_wide_normal_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_italic_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_italic_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_normal_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_normal_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_extended_italic_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_extended_italic_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_wide_bold_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_wide_bold_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_bold_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_bold_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_extended_normal_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_extended_normal_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_extended_bold_italic_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_extended_bold_italic_4_03.ttf"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/font/auditype_extended_bold_4_03.ttf",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/font/auditype_extended_bold_4_03.ttf"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.ui.core.common-core-ui-release-35:/layout/notification_template_part_chronometer.xml",
+        "source": "com.ui.core.common-core-ui-core-1.16.0-16:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.ui.core.common-core-ui-release-35:/layout/custom_dialog.xml",
+        "source": "com.ui.core.common-core-ui-core-1.16.0-16:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.ui.core.common-core-ui-release-35:/layout/ime_base_split_test_activity.xml",
+        "source": "com.ui.core.common-core-ui-core-1.16.0-16:/layout/ime_base_split_test_activity.xml"
+    },
+    {
+        "merged": "com.ui.core.common-core-ui-release-35:/layout/notification_template_part_time.xml",
+        "source": "com.ui.core.common-core-ui-core-1.16.0-16:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.ui.core.common-core-ui-release-35:/layout/ime_secondary_split_test_activity.xml",
+        "source": "com.ui.core.common-core-ui-core-1.16.0-16:/layout/ime_secondary_split_test_activity.xml"
+    }
+]

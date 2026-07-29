@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/layout/ime_base_split_test_activity.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/layout/ime_base_split_test_activity.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/layout/custom_dialog.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/layout/ime_secondary_split_test_activity.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/layout/ime_secondary_split_test_activity.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/layout/notification_template_part_chronometer.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/layout/notification_template_part_time.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/layout/notification_template_part_time.xml"
+    }
+]

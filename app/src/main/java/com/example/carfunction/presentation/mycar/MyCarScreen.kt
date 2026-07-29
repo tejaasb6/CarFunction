@@ -37,7 +37,7 @@ import com.ui.core.widgets.dividers.DividerConfig
  * MyCar screen — three core layout elements:
  *
  * ┌─────────────────────────────────────────────────────────────┐
- * │  [Search] [MyCar] [Charging] [Driving...] [Comfort...]     │  ← Navigation Bar
+ * │  [Search] [MyCar] [Charging] [Driving...] [Comfort...]      │  ← Navigation Bar
  * ├──────────────────────┬──────────────────────────────────────┤
  * │  Quick Access Tiles  │                                      │
  * │  ────────────────    │                                      │

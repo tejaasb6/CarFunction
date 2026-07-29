@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/exxx_interactive_placeholder.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/exxx_interactive_placeholder.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/arrowup.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/arrowup.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/arrowdown.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/arrowdown.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/checkboxcontrol.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/checkboxcontrol.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/e71e_button_plus.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/e71e_button_plus.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_decline.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_decline.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/external_link.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/external_link.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/error.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/error.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_answer.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_answer.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/notification_icon_background.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/notification_bg.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_answer_video.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_answer_video.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/notification_bg_low.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/notification_tile_bg.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_answer_video_low.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_answer_video_low.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_checkbox_warning.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/ic_checkbox_warning.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/icon.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/icon.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_answer_low.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_answer_low.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/ic_call_decline_low.xml",
+        "source": "com.ui.audi.audi-compose-ui-core-1.16.0-18:/drawable/ic_call_decline_low.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/triangle.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/triangle.xml"
+    },
+    {
+        "merged": "com.ui.audi.audi-compose-ui-release-37:/drawable/e71f_button_minus.xml",
+        "source": "com.ui.audi.audi-compose-ui-main-38:/drawable/e71f_button_minus.xml"
+    }
+]
