@@ -4,10 +4,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -29,7 +27,6 @@ import com.example.carfunction.presentation.comfortinterior.components.PinEntryM
 import com.example.carfunction.presentation.comfortinterior.components.SafetyContent
 import com.example.carfunction.presentation.comfortinterior.components.SeatAndLoadingContent
 import com.example.carfunction.presentation.comfortinterior.components.SeatMassageContent
-import com.example.carfunction.presentation.components.TopNavigationBar
 
 /**
  * Comfort & Interior screen — three core layout elements:
@@ -60,19 +57,6 @@ fun ComfortInteriorScreen(
 
     Box(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.fillMaxSize()) {
-            // ── 1. Top Navigation Bar ──────────────────────────────────────
-            TopNavigationBar(
-                selectedTab = state.selectedTab,
-                onTabSelected = {
-                    viewModel.dispatch(ComfortInteriorContract.Intent.SelectNavigationTab(it))
-                },
-                onSearchClick = {
-                    viewModel.dispatch(ComfortInteriorContract.Intent.SearchClicked)
-                },
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
             // ── Main Content: Sidebar + Content Area ───────────────────────
             Row(
                 modifier = Modifier

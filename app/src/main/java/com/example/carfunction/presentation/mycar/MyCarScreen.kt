@@ -29,7 +29,6 @@ import com.example.carfunction.presentation.components.DynamicContentToggle
 import com.example.carfunction.presentation.components.ExteriorInteriorToggle
 import com.example.carfunction.presentation.components.MassageControl
 import com.example.carfunction.presentation.components.QuickAccessTiles
-import com.example.carfunction.presentation.components.TopNavigationBar
 import com.ui.core.widgets.dividers.Divider
 import com.ui.core.widgets.dividers.DividerConfig
 
@@ -58,16 +57,6 @@ fun MyCarScreen(
     val state by viewModel.state.collectAsStateWithLifecycle()
 
     Column(modifier = Modifier.fillMaxSize()) {
-        // ── 1. Top Navigation Bar ──────────────────────────────────────────
-        TopNavigationBar(
-            selectedTab = state.selectedTab,
-            onTabSelected = { viewModel.dispatch(MyCarContract.Intent.SelectNavigationTab(it)) },
-            onSearchClick = { viewModel.dispatch(MyCarContract.Intent.SearchClicked) },
-        )
-
-        // ── Spacing between nav bar and content ────────────────────────────
-        Spacer(modifier = Modifier.height(16.dp))
-
         // ── Main Content: Left Pane + Right Pane ───────────────────────────
         Row(
             modifier = Modifier
