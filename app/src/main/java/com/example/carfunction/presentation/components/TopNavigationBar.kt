@@ -7,12 +7,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.carfunction.R
 import com.example.carfunction.domain.model.NavigationTab
 import com.ui.core.widgets.icons.Icon
 import com.ui.core.widgets.icons.IconConfig
@@ -31,6 +30,8 @@ import com.ui.core.widgets.text.TR
  * (MyCar, Charging, etc.). The search icon is placed outside the NavigationBar
  * widget so that it renders correctly with the Label variant.
  * The active tab is rendered with Audi brand styling (filled pill).
+ *
+ * Uses [IconSource.Resource] with drawable resources — no Material Icons dependency.
  */
 @Composable
 fun TopNavigationBar(
@@ -56,7 +57,7 @@ fun TopNavigationBar(
     ) {
         // ── Standalone search icon ─────────────────────────────────────────
         Icon(
-            source = IconSource.Vector(Icons.Filled.Search, contentDescription = "Search"),
+            source = IconSource.Resource(R.drawable.ic_search, contentDescription = "Search"),
             config = IconConfig(size = IconConfig.Size.MD),
             modifier = Modifier
                 .clickable(onClick = onSearchClick)

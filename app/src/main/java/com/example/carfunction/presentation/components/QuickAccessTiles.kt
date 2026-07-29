@@ -16,8 +16,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -27,6 +25,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.carfunction.R
 import com.example.carfunction.domain.model.QuickAccessFeature
 import com.ui.core.widgets.icons.Icon
 import com.ui.core.widgets.icons.IconConfig
@@ -41,6 +40,8 @@ import com.ui.core.widgets.text.TR
  *
  * All tiles share equal width via [weight] and a square aspect ratio so
  * that icons and multi-line labels are never clipped.
+ *
+ * Uses [IconSource.Resource] with drawable resources — no Material Icons dependency.
  */
 @Composable
 fun QuickAccessTiles(
@@ -93,7 +94,7 @@ private fun FeatureTile(
             .padding(10.dp),
     ) {
         Icon(
-            source = IconSource.Vector(feature.icon, contentDescription = feature.label),
+            source = IconSource.Resource(feature.iconRes, contentDescription = feature.label),
             config = IconConfig(size = IconConfig.Size.SM),
         )
         Spacer(modifier = Modifier.weight(1f))
@@ -132,7 +133,7 @@ private fun AddTile(
             contentAlignment = Alignment.Center,
         ) {
             Icon(
-                source = IconSource.Vector(Icons.Filled.Add, contentDescription = "Add"),
+                source = IconSource.Resource(R.drawable.ic_add, contentDescription = "Add"),
                 config = IconConfig(size = IconConfig.Size.SM),
             )
         }

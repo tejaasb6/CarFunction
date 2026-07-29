@@ -1,17 +1,7 @@
 package com.example.carfunction.data.datasource
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.DirectionsCar
-import androidx.compose.material.icons.filled.RemoveRedEye
-import androidx.compose.material.icons.filled.Speed
-import androidx.compose.material.icons.filled.Warning
-import androidx.compose.material.icons.filled.BatteryChargingFull
-import androidx.compose.material.icons.filled.Lightbulb
-import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.filled.TireRepair
-import androidx.compose.material.icons.filled.Roofing
-import androidx.compose.material.icons.filled.Air
 import androidx.compose.ui.graphics.Color
+import com.example.carfunction.R
 import com.example.carfunction.domain.model.AmbientLightPreset
 import com.example.carfunction.domain.model.DriveMode
 import com.example.carfunction.domain.model.MassageMode
@@ -20,11 +10,11 @@ import com.example.carfunction.domain.model.QuickAccessFeature
 import com.example.carfunction.domain.model.VehicleHotspot
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.map
 
 /**
  * Mock data source providing hardcoded data for development/testing.
  * Used in mockDebug and mockRelease build variants.
+ * Uses drawable resource IDs — no Material Icons dependency.
  */
 class MockCarFunctionDataSource : CarFunctionDataSource {
 
@@ -33,18 +23,18 @@ class MockCarFunctionDataSource : CarFunctionDataSource {
             QuickAccessFeature(
                 id = "traffic_sign",
                 label = "Traffic Sign Warning",
-                icon = Icons.Filled.Speed,
+                iconRes = R.drawable.ic_speed,
                 hasSettings = true,
             ),
             QuickAccessFeature(
                 id = "lane_departure",
                 label = "Lane Departure Warning",
-                icon = Icons.Filled.DirectionsCar,
+                iconRes = R.drawable.ic_car,
             ),
             QuickAccessFeature(
                 id = "distraction",
                 label = "Distraction Warning",
-                icon = Icons.Filled.RemoveRedEye,
+                iconRes = R.drawable.ic_eye,
             ),
         )
     )
@@ -66,12 +56,12 @@ class MockCarFunctionDataSource : CarFunctionDataSource {
 
     private val hotspots = MutableStateFlow(
         listOf(
-            VehicleHotspot("roof", "Roof Control", Icons.Filled.Roofing, 0.35f, 0.15f),
-            VehicleHotspot("spoiler_front", "Front Spoiler", Icons.Filled.Air, 0.10f, 0.45f),
-            VehicleHotspot("lights", "Lighting", Icons.Filled.Lightbulb, 0.50f, 0.50f),
-            VehicleHotspot("charging", "Charging Port", Icons.Filled.BatteryChargingFull, 0.75f, 0.30f),
-            VehicleHotspot("spoiler_rear", "Rear Spoiler", Icons.Filled.Settings, 0.90f, 0.40f),
-            VehicleHotspot("tire", "Tire Pressure", Icons.Filled.TireRepair, 0.20f, 0.80f),
+            VehicleHotspot("roof", "Roof Control", R.drawable.ic_roofing, 0.35f, 0.15f),
+            VehicleHotspot("spoiler_front", "Front Spoiler", R.drawable.ic_air, 0.10f, 0.45f),
+            VehicleHotspot("lights", "Lighting", R.drawable.ic_lightbulb, 0.50f, 0.50f),
+            VehicleHotspot("charging", "Charging Port", R.drawable.ic_battery_charging, 0.75f, 0.30f),
+            VehicleHotspot("spoiler_rear", "Rear Spoiler", R.drawable.ic_settings, 0.90f, 0.40f),
+            VehicleHotspot("tire", "Tire Pressure", R.drawable.ic_tire, 0.20f, 0.80f),
         )
     )
 

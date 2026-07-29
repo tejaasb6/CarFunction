@@ -15,8 +15,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Backspace
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,6 +24,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.carfunction.R
 import com.ui.core.widgets.icons.Icon
 import com.ui.core.widgets.icons.IconConfig
 import com.ui.core.widgets.icons.IconSource
@@ -41,8 +40,10 @@ private const val PIN_LENGTH = 4
  * Displays:
  * - Title: "Set Glovebox PIN"
  * - 4 dot indicators showing entry progress
- * - Backspace icon
+ * - Backspace icon (drawable resource)
  * - 3x4 numeric keypad
+ *
+ * Uses [IconSource.Resource] — no Material Icons dependency.
  */
 @Composable
 fun PinEntryModal(
@@ -98,8 +99,8 @@ fun PinEntryModal(
 
                 // Backspace icon
                 Icon(
-                    source = IconSource.Vector(
-                        Icons.AutoMirrored.Filled.Backspace,
+                    source = IconSource.Resource(
+                        R.drawable.ic_backspace,
                         contentDescription = "Delete",
                     ),
                     config = IconConfig(size = IconConfig.Size.SM),

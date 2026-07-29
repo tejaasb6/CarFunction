@@ -104,7 +104,7 @@ private fun BoxScope.HotspotIcon(
         contentAlignment = Alignment.Center,
     ) {
         Icon(
-            source = IconSource.Vector(hotspot.icon, contentDescription = hotspot.label),
+            source = IconSource.Resource(hotspot.iconRes, contentDescription = hotspot.label),
             config = IconConfig(size = IconConfig.Size.SM),
         )
     }

@@ -8,12 +8,11 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Edit
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.carfunction.R
 import com.example.carfunction.presentation.comfortinterior.ComfortInteriorContract
 import com.ui.core.widgets.dividers.Divider
 import com.ui.core.widgets.dividers.DividerConfig
@@ -32,6 +31,8 @@ import com.ui.core.widgets.toggleswitch.ToggleSwitchState
  * Contains:
  * - Safety toggles: Passenger Airbag, Fond Information tone, Child presence detection
  * - Privacy section: Glovebox PIN toggle with edit icon
+ *
+ * Uses [IconSource.Resource] with drawable resources — no Material Icons dependency.
  */
 @Composable
 fun SafetyContent(
@@ -124,8 +125,8 @@ fun SafetyContent(
 
             // Edit icon (pencil) for changing existing PIN
             Icon(
-                source = IconSource.Vector(
-                    Icons.Filled.Edit,
+                source = IconSource.Resource(
+                    R.drawable.ic_edit,
                     contentDescription = "Edit Glovebox PIN",
                 ),
                 config = IconConfig(size = IconConfig.Size.SM),

@@ -6,9 +6,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,6 +14,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.carfunction.R
 import com.example.carfunction.domain.model.DriveMode
 import com.ui.core.widgets.icons.Icon
 import com.ui.core.widgets.icons.IconConfig
@@ -31,6 +29,8 @@ import com.ui.core.widgets.text.TR
  * Layout matches the reference design:
  * - Chevrons at left/right edges, mode name large & centered between them.
  * - "Drive Select" label below, **left-aligned** to the section's start.
+ *
+ * Uses [IconSource.Resource] with drawable resources — no Material Icons dependency.
  */
 @Composable
 fun DriveSelectCarousel(
@@ -53,8 +53,8 @@ fun DriveSelectCarousel(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Icon(
-                source = IconSource.Vector(
-                    Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                source = IconSource.Resource(
+                    R.drawable.ic_chevron_left,
                     contentDescription = "Previous mode",
                 ),
                 config = IconConfig(size = IconConfig.Size.MD),
@@ -71,8 +71,8 @@ fun DriveSelectCarousel(
             )
 
             Icon(
-                source = IconSource.Vector(
-                    Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                source = IconSource.Resource(
+                    R.drawable.ic_chevron_right,
                     contentDescription = "Next mode",
                 ),
                 config = IconConfig(size = IconConfig.Size.MD),
