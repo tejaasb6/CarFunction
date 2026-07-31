@@ -26,6 +26,6 @@
       type="MAIN"
       applicationId="com.ui.audi"
       generatedSourceFolders="build/generated/ap_generated_sources/release/out"
-      desugaredMethodsFiles="/home/tejasb6/.gradle/caches/9.5.0/transforms/8af611870ec508af4948f13e1ffc5f70/transformed/D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="/home/tejasb6/.gradle/caches/9.5.0/transforms/cb9edbafedf384b143404942c91d21c3/transformed/D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.navigation
 
 import androidx.compose.runtime.Composable
@@ -21,22 +25,22 @@ fun CarFunctionNavHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = AppRoutes.MY_CAR,
+        startDestination = AppRoutes.startDestination,
         modifier = modifier,
     ) {
-        composable(AppRoutes.MY_CAR) {
+        composable(AppRoute.MyCar.route) {
             MyCarScreen()
         }
-        composable(AppRoutes.CHARGING) {
+        composable(AppRoute.Charging.route) {
             ChargingScreen()
         }
-        composable(AppRoutes.DRIVING_ASSISTANCE) {
+        composable(AppRoute.DrivingAssistance.route) {
             DrivingAssistanceScreen()
         }
-        composable(AppRoutes.DRIVING_EXTERIOR) {
+        composable(AppRoute.DrivingExterior.route) {
             DrivingExteriorScreen()
         }
-        composable(AppRoutes.COMFORT_INTERIOR) {
+        composable(AppRoute.ComfortInterior.route) {
             ComfortInteriorScreen()
         }
     }

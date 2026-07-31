@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction
 
 import android.os.Bundle
@@ -17,9 +21,11 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.carfunction.presentation.components.TopNavigationBar
+import com.example.carfunction.presentation.navigation.AppRoute
 import com.example.carfunction.presentation.navigation.AppRoutes
 import com.example.carfunction.presentation.navigation.CarFunctionNavHost
 import com.ui.audi.AudiTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Single Activity entry point for the CarFunction app.
@@ -36,6 +42,7 @@ import com.ui.audi.AudiTheme
  * No Material3 theme is used — all UI is rendered via Audi design-system
  * widgets exclusively.
  */
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,7 +70,7 @@ class MainActivity : ComponentActivity() {
                                 if (route != currentRoute) {
                                     navController.navigate(route) {
                                         // Pop up to start to avoid stacking screens
-                                        popUpTo(AppRoutes.MY_CAR) { saveState = true }
+                                        popUpTo(AppRoute.MyCar.route) { saveState = true }
                                         launchSingleTop = true
                                         restoreState = true
                                     }

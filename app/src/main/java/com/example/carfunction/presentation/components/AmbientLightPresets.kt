@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.components
 
 import androidx.compose.foundation.background
@@ -53,7 +57,7 @@ fun AmbientLightPresetsRow(
                         modifier = Modifier
                             .size(44.dp)
                             .clip(CircleShape)
-                            .background(preset.color, CircleShape)
+                            .background(Color(preset.colorArgb), CircleShape)
                             .then(
                                 if (isSelected) {
                                     Modifier.border(3.dp, Color.Black, CircleShape)

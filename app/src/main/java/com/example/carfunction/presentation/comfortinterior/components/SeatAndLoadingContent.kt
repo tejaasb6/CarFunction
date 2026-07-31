@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.background
@@ -40,11 +44,15 @@ fun SeatAndLoadingContent(
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(horizontal = 24.dp, vertical = 20.dp),
     ) {
-        SeatLoadingSection.entries.forEach { section ->
+        SeatLoadingSection.entries.forEachIndexed { sectionIndex, section ->
+            if (sectionIndex > 0) {
+                Spacer(modifier = Modifier.height(24.dp))
+            }
+
             SectionHeader(title = section.label)
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
             SeatLoadingFunction.entries
                 .filter { it.section == section }
@@ -60,8 +68,6 @@ fun SeatAndLoadingContent(
                         },
                     )
                 }
-
-            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
@@ -84,18 +90,18 @@ internal fun SelectableListItem(
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .padding(vertical = 2.dp)
+            .padding(vertical = 3.dp)
             .clip(shape)
             .background(bgColor, shape)
             .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 12.dp),
+            .padding(horizontal = 20.dp, vertical = 14.dp),
         contentAlignment = Alignment.CenterStart,
     ) {
         Text(
             state = TextState(text = label.TR),
             style = TextStyle(
                 color = textColor,
-                fontSize = 14.sp,
+                fontSize = 15.sp,
                 fontWeight = if (isSelected) FontWeight.Medium else FontWeight.Normal,
             ),
         )

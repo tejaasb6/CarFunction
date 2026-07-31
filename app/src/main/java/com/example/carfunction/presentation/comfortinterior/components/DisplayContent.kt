@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.background
@@ -45,18 +49,18 @@ fun DisplayContent(
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(horizontal = 24.dp, vertical = 20.dp),
     ) {
         SectionHeader(title = "Display Brightness")
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(20.dp))
 
         // ── Display Target Selector ────────────────────────────────────────
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly,
         ) {
-            DisplayTarget.entries.forEach { target ->
+            state.visibleDisplayTargets.forEach { target ->
                 val isSelected = target == state.selectedDisplayTarget
                 DisplayTargetChip(
                     label = target.label,

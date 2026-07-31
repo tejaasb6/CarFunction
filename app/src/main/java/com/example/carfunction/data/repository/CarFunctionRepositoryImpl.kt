@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.data.repository
 
 import com.example.carfunction.data.datasource.CarFunctionDataSource
@@ -15,7 +19,7 @@ import kotlinx.coroutines.flow.Flow
  * the injected [CarFunctionDataSource].
  * The data source is swapped via build variant (mock vs prod).
  */
-class CarFunctionRepositoryImpl(
+internal class CarFunctionRepositoryImpl(
     private val dataSource: CarFunctionDataSource,
 ) : CarFunctionRepository {
 

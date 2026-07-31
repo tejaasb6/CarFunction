@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.core.oem
 
 import com.example.carfunction.core.platform.PlatformCapabilities

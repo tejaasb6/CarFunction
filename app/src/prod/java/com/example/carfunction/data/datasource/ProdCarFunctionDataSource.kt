@@ -1,6 +1,9 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.data.datasource
 
-import androidx.compose.ui.graphics.Color
 import com.example.carfunction.R
 import com.example.carfunction.domain.model.AmbientLightPreset
 import com.example.carfunction.domain.model.DriveMode
@@ -25,18 +28,18 @@ class ProdCarFunctionDataSource : CarFunctionDataSource {
             QuickAccessFeature(
                 id = "traffic_sign",
                 label = "Traffic Sign Warning",
-                iconRes = R.drawable.ic_speed,
+                iconResId = R.drawable.ic_speed,
                 hasSettings = true,
             ),
             QuickAccessFeature(
                 id = "lane_departure",
                 label = "Lane Departure Warning",
-                iconRes = R.drawable.ic_car,
+                iconResId = R.drawable.ic_car,
             ),
             QuickAccessFeature(
                 id = "distraction",
                 label = "Distraction Warning",
-                iconRes = R.drawable.ic_eye,
+                iconResId = R.drawable.ic_eye,
             ),
         )
     )
@@ -45,10 +48,10 @@ class ProdCarFunctionDataSource : CarFunctionDataSource {
     private val massageState = MutableStateFlow(MassageState())
     private val ambientPresets = MutableStateFlow(
         listOf(
-            AmbientLightPreset("cold", "Cold", Color(0xFF8EC8F2)),
-            AmbientLightPreset("warm", "Warm", Color(0xFFE8C99B)),
-            AmbientLightPreset("day", "Day", Color(0xFFFFF176)),
-            AmbientLightPreset("night", "Night", Color(0xFF1A237E)),
+            AmbientLightPreset("cold", "Cold", 0xFF8EC8F2),
+            AmbientLightPreset("warm", "Warm", 0xFFE8C99B),
+            AmbientLightPreset("day", "Day", 0xFFFFF176),
+            AmbientLightPreset("night", "Night", 0xFF1A237E),
         )
     )
     private val hotspots = MutableStateFlow(

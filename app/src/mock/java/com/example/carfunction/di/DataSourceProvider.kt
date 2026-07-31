@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.di
 
 import com.example.carfunction.data.datasource.CarFunctionDataSource

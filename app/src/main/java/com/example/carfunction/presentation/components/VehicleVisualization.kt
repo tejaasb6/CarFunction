@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.components
 
 import androidx.compose.foundation.background
@@ -104,7 +108,7 @@ private fun BoxScope.HotspotIcon(
         contentAlignment = Alignment.Center,
     ) {
         Icon(
-            source = IconSource.Resource(hotspot.iconRes, contentDescription = hotspot.label),
+            source = IconSource.Resource(hotspot.iconResId, contentDescription = hotspot.label),
             config = IconConfig(size = IconConfig.Size.SM),
         )
     }

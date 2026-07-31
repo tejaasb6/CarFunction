@@ -1,12 +1,14 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -21,7 +23,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.carfunction.domain.model.ComfortMassageMode
-import com.example.carfunction.domain.model.SeatPosition
 import com.example.carfunction.presentation.comfortinterior.ComfortInteriorContract
 import com.ui.core.widgets.text.Text
 import com.ui.core.widgets.text.TextState
@@ -30,8 +31,11 @@ import com.ui.core.widgets.text.TR
 /**
  * Seat Massage content section.
  *
- * Displays a seat selector (Driver / Passenger) and a horizontal segmented
- * massage mode selector (OFF, Balance, Active, Mobility, Relax, Stretch).
+ * Displays only the horizontal segmented massage mode selector:
+ * OFF | Balance | Active | Mobility | Relax | Stretch
+ *
+ * This composable is placed at the bottom center of the visualization
+ * area by [ComfortInteriorScreen.SeatMassageLayout].
  */
 @Composable
 fun SeatMassageContent(
@@ -39,108 +43,51 @@ fun SeatMassageContent(
     dispatch: (ComfortInteriorContract.Intent) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Column(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(16.dp),
-    ) {
-        // ── Seat Selector ──────────────────────────────────────────────────
-        SectionHeader(title = "Select Seat")
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        SeatSelector(
-            selectedSeat = state.selectedMassageSeat,
-            onSeatSelected = {
-                dispatch(ComfortInteriorContract.Intent.SelectMassageSeat(it))
-            },
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        // ── Massage Mode Selector ──────────────────────────────────────────
-        SectionHeader(title = "Massage Program")
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        MassageModeSelector(
-            currentMode = state.currentMassageMode,
-            onModeSelected = {
-                dispatch(ComfortInteriorContract.Intent.SetMassageMode(it))
-            },
-        )
-    }
+    MassageModeSelector(
+        currentMode = state.currentMassageMode,
+        onModeSelected = {
+            dispatch(ComfortInteriorContract.Intent.SetMassageMode(it))
+        },
+        modifier = modifier,
+    )
 }
 
 /**
- * Seat selector: two pill-shaped buttons for Driver / Passenger.
- */
-@Composable
-private fun SeatSelector(
-    selectedSeat: SeatPosition,
-    onSeatSelected: (SeatPosition) -> Unit,
-) {
-    Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.Center,
-    ) {
-        Row(
-            modifier = Modifier
-                .clip(RoundedCornerShape(24.dp))
-                .background(Color(0xFFF0F0F0))
-                .padding(4.dp),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            SeatPosition.entries.forEach { seat ->
-                val isSelected = seat == selectedSeat
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(20.dp))
-                        .then(if (isSelected) Modifier.background(Color.Black) else Modifier)
-                        .clickable { onSeatSelected(seat) }
-                        .padding(horizontal = 24.dp, vertical = 10.dp),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Text(
-                        state = TextState(text = seat.label.TR),
-                        style = TextStyle(
-                            color = if (isSelected) Color.White else Color.Black,
-                            fontSize = 14.sp,
-                            fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal,
-                        ),
-                    )
-                }
-            }
-        }
-    }
-}
-
-/**
- * Horizontal segmented massage mode selector.
- * Displays: OFF | Balance | Active | Mobility | Relax | Stretch
+ * Horizontal segmented massage mode selector matching the reference design.
+ *
+ * White pill-shaped container with thin vertical dividers between items.
+ * Selected item: black pill with white text.
+ * Unselected items: plain dark text.
+ *
+ * ┌──────┬─────────┬────────┬──────────┬───────┬─────────┐
+ * │ OFF● │ Balance │ Active │ Mobility │ Relax │ Stretch │
+ * └──────┴─────────┴────────┴──────────┴───────┴─────────┘
  */
 @Composable
 private fun MassageModeSelector(
     currentMode: ComfortMassageMode,
     onModeSelected: (ComfortMassageMode) -> Unit,
+    modifier: Modifier = Modifier,
 ) {
     Row(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 24.dp),
         horizontalArrangement = Arrangement.Center,
     ) {
         Row(
             modifier = Modifier
-                .clip(RoundedCornerShape(24.dp))
-                .background(Color(0xFFF0F0F0))
+                .clip(RoundedCornerShape(28.dp))
+                .background(Color.White)
                 .padding(4.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             ComfortMassageMode.entries.forEachIndexed { index, mode ->
                 if (index > 0) {
-                    // Vertical divider between modes
+                    // Thin vertical divider
                     Box(
                         modifier = Modifier
-                            .height(24.dp)
+                            .height(20.dp)
                             .padding(horizontal = 1.dp)
                             .background(Color(0xFFD0D0D0))
                             .padding(horizontal = 0.5.dp),
@@ -149,17 +96,20 @@ private fun MassageModeSelector(
                 val isSelected = mode == currentMode
                 Box(
                     modifier = Modifier
-                        .clip(RoundedCornerShape(20.dp))
+                        .clip(RoundedCornerShape(24.dp))
                         .then(if (isSelected) Modifier.background(Color.Black) else Modifier)
                         .clickable { onModeSelected(mode) }
-                        .padding(horizontal = 14.dp, vertical = 10.dp),
+                        .padding(horizontal = 16.dp, vertical = 10.dp),
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        state = TextState(text = mode.label.TR),
+                        state = TextState(
+                            text = mode.label.TR,
+                            maxLines = 1,
+                        ),
                         style = TextStyle(
                             color = if (isSelected) Color.White else Color.Black,
-                            fontSize = 12.sp,
+                            fontSize = 14.sp,
                             fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal,
                         ),
                     )

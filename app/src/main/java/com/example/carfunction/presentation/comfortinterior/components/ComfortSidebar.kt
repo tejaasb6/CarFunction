@@ -1,12 +1,20 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,18 +33,29 @@ import com.ui.core.widgets.text.TR
  * Left sidebar vertical navigation menu for the Comfort & Interior screen.
  *
  * Displays all sub-section items vertically with a black rounded pill highlight
- * on the currently selected item (matching the MyCar TopNavigationBar active state pattern).
+ * on the currently selected item. Matches the reference Audi MMI sidebar layout:
+ * - White background panel
+ * - Items left-aligned with consistent vertical spacing (~24dp between items)
+ * - Selected item: black capsule with white text
+ * - Unselected items: plain black text
  */
 @Composable
 fun ComfortSidebar(
     selectedSection: ComfortSubSection,
+    visibleSections: List<ComfortSubSection>,
     onSectionSelected: (ComfortSubSection) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Column(
-        modifier = modifier.padding(vertical = 16.dp),
+        modifier = modifier
+            .background(Color.White)
+            .verticalScroll(rememberScrollState())
+            .padding(vertical = 24.dp),
     ) {
-        ComfortSubSection.entries.forEach { section ->
+        visibleSections.forEachIndexed { index, section ->
+            if (index > 0) {
+                Spacer(modifier = Modifier.height(8.dp))
+            }
             val isSelected = section == selectedSection
             SidebarItem(
                 label = section.label,
@@ -60,18 +79,21 @@ private fun SidebarItem(
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 4.dp)
+            .padding(horizontal = 16.dp, vertical = 2.dp)
             .clip(shape)
             .background(bgColor, shape)
             .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 12.dp),
+            .padding(horizontal = 20.dp, vertical = 14.dp),
         contentAlignment = Alignment.CenterStart,
     ) {
         Text(
-            state = TextState(text = label.TR),
+            state = TextState(
+                text = label.TR,
+                maxLines = 1,
+            ),
             style = TextStyle(
                 color = textColor,
-                fontSize = 14.sp,
+                fontSize = 15.sp,
                 fontWeight = if (isSelected) FontWeight.Medium else FontWeight.Normal,
             ),
         )

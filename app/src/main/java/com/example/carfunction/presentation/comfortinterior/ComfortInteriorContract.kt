@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior
 
 import com.example.carfunction.core.mvi.MviEffect
@@ -13,6 +17,10 @@ import com.example.carfunction.domain.model.PanoramaRoofState
 import com.example.carfunction.domain.model.SafetyPrivacyState
 import com.example.carfunction.domain.model.SeatLoadingFunction
 import com.example.carfunction.domain.model.SeatPosition
+import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.ImmutableMap
+import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.persistentMapOf
 
 /**
  * MVI contract for the Comfort & Interior screen.
@@ -44,6 +52,10 @@ object ComfortInteriorContract {
         data class SetAmbientTheme(val theme: AmbientTheme) : Intent
         data class SetAmbientBrightness(val brightness: Float) : Intent
         data class ToggleFootwellLighting(val enabled: Boolean) : Intent
+        data class ToggleRooflineLighting(val enabled: Boolean) : Intent
+        data class TogglePanoramicRoofLighting(val enabled: Boolean) : Intent
+        data class ToggleInteractionLight(val enabled: Boolean) : Intent
+        data class SetInteractionLightBrightness(val brightness: Float) : Intent
         data class ToggleAmbientSetting(val settingId: String, val enabled: Boolean) : Intent
 
         // ── Panorama Roof ──────────────────────────────────────────────────
@@ -76,6 +88,9 @@ object ComfortInteriorContract {
         val selectedTab: NavigationTab = NavigationTab.COMFORT_INTERIOR,
         val selectedSubSection: ComfortSubSection = ComfortSubSection.SEAT_MASSAGE,
 
+        /** Sub-sections visible on the current platform (filtered by capabilities). */
+        val visibleSubSections: List<ComfortSubSection> = ComfortSubSection.entries,
+
         // Seat Massage
         val selectedMassageSeat: SeatPosition = SeatPosition.PASSENGER,
         val driverMassageMode: ComfortMassageMode = ComfortMassageMode.OFF,
@@ -92,8 +107,9 @@ object ComfortInteriorContract {
         val panoramaRoofState: PanoramaRoofState = PanoramaRoofState(),
 
         // Display
+        val visibleDisplayTargets: ImmutableList<DisplayTarget> = persistentListOf(*DisplayTarget.entries.toTypedArray()),
         val selectedDisplayTarget: DisplayTarget = DisplayTarget.VIRTUAL_COCKPIT,
-        val displayBrightness: Map<DisplayTarget, Float> = mapOf(
+        val displayBrightness: ImmutableMap<DisplayTarget, Float> = persistentMapOf(
             DisplayTarget.HEAD_UP to 0.5f,
             DisplayTarget.VIRTUAL_COCKPIT to 0.5f,
             DisplayTarget.MMI to 0.5f,
@@ -102,7 +118,8 @@ object ComfortInteriorContract {
         // Safety
         val safetyState: SafetyPrivacyState = SafetyPrivacyState(),
         val showPinModal: Boolean = false,
-        val pinEntryDigits: List<Int> = emptyList(),
+        /** Count of entered PIN digits (actual digits are kept in a private VM buffer). */
+        val pinEntryDigitCount: Int = 0,
         val showAirbagConfirmation: Boolean = false,
         val pendingAirbagState: Boolean? = null,
 

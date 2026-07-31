@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.mycar
 
 import androidx.compose.foundation.background
@@ -13,6 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -20,7 +25,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.carfunction.domain.model.CarViewMode
 import com.example.carfunction.domain.model.MassageMode
 import com.example.carfunction.presentation.components.AmbientLightPresetsRow
@@ -50,13 +55,50 @@ import com.ui.core.widgets.dividers.DividerConfig
  * │  Dynamic Content     │                                      │
  * └──────────────────────┴──────────────────────────────────────┘
  */
+/**
+ * Screen composable — owns the [MyCarViewModel], collects state, handles
+ * one-shot effects, and delegates all layout to [MyCarContent].
+ */
 @Composable
 fun MyCarScreen(
-    viewModel: MyCarViewModel = viewModel(),
+    viewModel: MyCarViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    // Trigger initial data load once per composition lifetime
+    LaunchedEffect(Unit) {
+        viewModel.loadInitialData()
+    }
+
+    // Collect one-shot effects
+    LaunchedEffect(Unit) {
+        viewModel.effect.collect { effect ->
+            when (effect) {
+                is MyCarContract.Effect.ShowToast -> { /* Handle toast */ }
+                is MyCarContract.Effect.NavigateToHotspotDetail -> { /* Navigate */ }
+                is MyCarContract.Effect.OpenSearch -> { /* Open search */ }
+                is MyCarContract.Effect.OpenAddQuickAccess -> { /* Open add dialog */ }
+            }
+        }
+    }
+
+    MyCarContent(
+        state = state,
+        onDispatch = viewModel::dispatch,
+    )
+}
+
+/**
+ * Layout composable — pure, testable UI that receives immutable [state] and
+ * dispatches user interactions via [onDispatch]. No ViewModel reference.
+ */
+@Composable
+fun MyCarContent(
+    state: MyCarContract.State,
+    onDispatch: (MyCarContract.Intent) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier = modifier.fillMaxSize()) {
         // ── Main Content: Left Pane + Right Pane ───────────────────────────
         Row(
             modifier = Modifier
@@ -76,7 +118,7 @@ fun MyCarScreen(
                     features = state.quickAccessFeatures,
                     maxSlots = 4,
                     onAddClick = {
-                        viewModel.dispatch(MyCarContract.Intent.AddQuickAccessClicked)
+                        onDispatch(MyCarContract.Intent.AddQuickAccessClicked)
                     },
                 )
 
@@ -88,10 +130,10 @@ fun MyCarScreen(
                 DriveSelectCarousel(
                     currentMode = state.selectedDriveMode,
                     onPrevious = {
-                        viewModel.dispatch(MyCarContract.Intent.CycleDriveMode(forward = false))
+                        onDispatch(MyCarContract.Intent.CycleDriveMode(forward = false))
                     },
                     onNext = {
-                        viewModel.dispatch(MyCarContract.Intent.CycleDriveMode(forward = true))
+                        onDispatch(MyCarContract.Intent.CycleDriveMode(forward = true))
                     },
                 )
 
@@ -105,7 +147,7 @@ fun MyCarScreen(
                     currentMode = state.massageState.driverMode,
                     options = listOf(MassageMode.OFF, MassageMode.ACTIVE),
                     onModeSelected = {
-                        viewModel.dispatch(MyCarContract.Intent.SetMassageDriverMode(it))
+                        onDispatch(MyCarContract.Intent.SetMassageDriverMode(it))
                     },
                 )
 
@@ -117,7 +159,7 @@ fun MyCarScreen(
                     currentMode = state.massageState.passengerMode,
                     options = listOf(MassageMode.OFF, MassageMode.MOBILITY),
                     onModeSelected = {
-                        viewModel.dispatch(MyCarContract.Intent.SetMassagePassengerMode(it))
+                        onDispatch(MyCarContract.Intent.SetMassagePassengerMode(it))
                     },
                 )
 
@@ -130,7 +172,7 @@ fun MyCarScreen(
                     presets = state.ambientLightPresets,
                     selectedPresetId = state.selectedAmbientPresetId,
                     onPresetSelected = {
-                        viewModel.dispatch(MyCarContract.Intent.SelectAmbientPreset(it))
+                        onDispatch(MyCarContract.Intent.SelectAmbientPreset(it))
                     },
                 )
 
@@ -142,7 +184,7 @@ fun MyCarScreen(
                 DynamicContentToggle(
                     isEnabled = state.isDynamicContentEnabled,
                     onToggle = {
-                        viewModel.dispatch(MyCarContract.Intent.ToggleDynamicContent(it))
+                        onDispatch(MyCarContract.Intent.ToggleDynamicContent(it))
                     },
                 )
 

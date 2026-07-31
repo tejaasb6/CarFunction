@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.components
 
 import androidx.compose.foundation.background
@@ -94,7 +98,7 @@ private fun FeatureTile(
             .padding(10.dp),
     ) {
         Icon(
-            source = IconSource.Resource(feature.iconRes, contentDescription = feature.label),
+            source = IconSource.Resource(feature.iconResId, contentDescription = feature.label),
             config = IconConfig(size = IconConfig.Size.SM),
         )
         Spacer(modifier = Modifier.weight(1f))

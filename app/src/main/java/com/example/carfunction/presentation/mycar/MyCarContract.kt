@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.mycar
 
 import com.example.carfunction.core.mvi.MviEffect
@@ -11,6 +15,8 @@ import com.example.carfunction.domain.model.MassageState
 import com.example.carfunction.domain.model.NavigationTab
 import com.example.carfunction.domain.model.QuickAccessFeature
 import com.example.carfunction.domain.model.VehicleHotspot
+import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.persistentListOf
 
 /**
  * MVI contract for the MyCar screen.
@@ -39,13 +45,13 @@ object MyCarContract {
         val isLoading: Boolean = true,
         val selectedTab: NavigationTab = NavigationTab.MY_CAR,
         val carViewMode: CarViewMode = CarViewMode.EXTERIOR,
-        val quickAccessFeatures: List<QuickAccessFeature> = emptyList(),
-        val driveModes: List<DriveMode> = emptyList(),
+        val quickAccessFeatures: ImmutableList<QuickAccessFeature> = persistentListOf(),
+        val driveModes: ImmutableList<DriveMode> = persistentListOf(),
         val selectedDriveModeIndex: Int = 1, // default to "balanced"
         val massageState: MassageState = MassageState(),
-        val ambientLightPresets: List<AmbientLightPreset> = emptyList(),
+        val ambientLightPresets: ImmutableList<AmbientLightPreset> = persistentListOf(),
         val selectedAmbientPresetId: String = "",
-        val vehicleHotspots: List<VehicleHotspot> = emptyList(),
+        val vehicleHotspots: ImmutableList<VehicleHotspot> = persistentListOf(),
         val isDynamicContentEnabled: Boolean = true,
         val error: String? = null,
     ) : MviState {

@@ -1,6 +1,9 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.data.datasource
 
-import androidx.compose.ui.graphics.Color
 import com.example.carfunction.R
 import com.example.carfunction.domain.model.AmbientLightPreset
 import com.example.carfunction.domain.model.DriveMode
@@ -23,18 +26,18 @@ class MockCarFunctionDataSource : CarFunctionDataSource {
             QuickAccessFeature(
                 id = "traffic_sign",
                 label = "Traffic Sign Warning",
-                iconRes = R.drawable.ic_speed,
+                iconResId = R.drawable.ic_speed,
                 hasSettings = true,
             ),
             QuickAccessFeature(
                 id = "lane_departure",
                 label = "Lane Departure Warning",
-                iconRes = R.drawable.ic_car,
+                iconResId = R.drawable.ic_car,
             ),
             QuickAccessFeature(
                 id = "distraction",
                 label = "Distraction Warning",
-                iconRes = R.drawable.ic_eye,
+                iconResId = R.drawable.ic_eye,
             ),
         )
     )
@@ -45,10 +48,10 @@ class MockCarFunctionDataSource : CarFunctionDataSource {
 
     private val ambientPresets = MutableStateFlow(
         listOf(
-            AmbientLightPreset("cold", "Cold", Color(0xFF8EC8F2)),
-            AmbientLightPreset("warm", "Warm", Color(0xFFE8C99B)),
-            AmbientLightPreset("day", "Day", Color(0xFFFFF176)),
-            AmbientLightPreset("night", "Night", Color(0xFF1A237E)),
+            AmbientLightPreset("cold", "Cold", 0xFF8EC8F2),
+            AmbientLightPreset("warm", "Warm", 0xFFE8C99B),
+            AmbientLightPreset("day", "Day", 0xFFFFF176),
+            AmbientLightPreset("night", "Night", 0xFF1A237E),
         )
     )
 
@@ -62,6 +65,7 @@ class MockCarFunctionDataSource : CarFunctionDataSource {
             VehicleHotspot("charging", "Charging Port", R.drawable.ic_battery_charging, 0.75f, 0.30f),
             VehicleHotspot("spoiler_rear", "Rear Spoiler", R.drawable.ic_settings, 0.90f, 0.40f),
             VehicleHotspot("tire", "Tire Pressure", R.drawable.ic_tire, 0.20f, 0.80f),
+
         )
     )
 

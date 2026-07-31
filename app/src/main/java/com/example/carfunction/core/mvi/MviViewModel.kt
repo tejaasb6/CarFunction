@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.core.mvi
 
 import androidx.lifecycle.ViewModel
@@ -7,6 +11,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 /**
@@ -34,10 +39,10 @@ abstract class MviViewModel<I : MviIntent, S : MviState, E : MviEffect>(
     protected abstract suspend fun handleIntent(intent: I)
 
     protected fun updateState(reducer: S.() -> S) {
-        _state.value = _state.value.reducer()
+        _state.update { it.reducer() }
     }
 
     protected fun sendEffect(effect: E) {
-        viewModelScope.launch { _effect.send(effect) }
+        _effect.trySend(effect)
     }
 }

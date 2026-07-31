@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.clickable
@@ -45,12 +49,12 @@ fun SafetyContent(
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(horizontal = 24.dp, vertical = 20.dp),
     ) {
         // ── Safety Section ─────────────────────────────────────────────────
         SectionHeader(title = "Safety")
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(12.dp))
 
         // Passenger Airbag
         ToggleSwitch(
@@ -65,7 +69,7 @@ fun SafetyContent(
             ),
         )
 
-        Spacer(modifier = Modifier.height(4.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         // Fond Information Tone
         ToggleSwitch(
@@ -80,7 +84,7 @@ fun SafetyContent(
             ),
         )
 
-        Spacer(modifier = Modifier.height(4.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         // Child Presence Detection
         ToggleSwitch(
@@ -102,7 +106,7 @@ fun SafetyContent(
         // ── Privacy Section ────────────────────────────────────────────────
         SectionHeader(title = "Privacy")
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(12.dp))
 
         // Glovebox PIN with edit icon
         Row(
@@ -121,21 +125,23 @@ fun SafetyContent(
                 ),
             )
 
-            Spacer(modifier = Modifier.width(8.dp))
+            // Edit icon (pencil) for changing existing PIN — only shown when PIN is active
+            if (safetyState.gloveboxPinEnabled) {
+                Spacer(modifier = Modifier.width(8.dp))
 
-            // Edit icon (pencil) for changing existing PIN
-            Icon(
-                source = IconSource.Resource(
-                    R.drawable.ic_edit,
-                    contentDescription = "Edit Glovebox PIN",
-                ),
-                config = IconConfig(size = IconConfig.Size.SM),
-                modifier = Modifier
-                    .clickable {
-                        dispatch(ComfortInteriorContract.Intent.OpenPinModal)
-                    }
-                    .padding(8.dp),
-            )
+                Icon(
+                    source = IconSource.Resource(
+                        R.drawable.ic_edit,
+                        contentDescription = "Edit Glovebox PIN",
+                    ),
+                    config = IconConfig(size = IconConfig.Size.SM),
+                    modifier = Modifier
+                        .clickable {
+                            dispatch(ComfortInteriorContract.Intent.OpenPinModal)
+                        }
+                        .padding(8.dp),
+                )
+            }
         }
     }
 }

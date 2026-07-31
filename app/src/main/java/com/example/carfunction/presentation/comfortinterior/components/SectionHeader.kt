@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior.components
 
 import androidx.compose.foundation.layout.padding
@@ -23,8 +27,8 @@ fun SectionHeader(
     Text(
         state = TextState(text = title.TR),
         style = TextStyle(
-            fontSize = 12.sp,
-            color = Color.Gray,
+            fontSize = 13.sp,
+            color = Color(0xFF888888),
         ),
         modifier = modifier.padding(start = 4.dp),
     )

@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.domain.model
 
 /**
@@ -92,12 +96,21 @@ data class AmbientLightSettingItem(
 
 /**
  * Full ambient light state for the Comfort & Interior screen.
+ *
+ * Maps to the reference UI which has three sections:
+ * 1. Master toggle + theme selector + brightness slider
+ * 2. Ambient Light Settings (Footwell, Roofline, Panoramic Roof Lighting)
+ * 3. Interaction Light (master toggle + brightness + individual feature toggles)
  */
 data class ComfortAmbientLightState(
     val masterEnabled: Boolean = false,
     val theme: AmbientTheme = AmbientTheme.SKY,
     val brightness: Float = 0.3f,
     val footwellLightingEnabled: Boolean = false,
+    val rooflineLightingEnabled: Boolean = false,
+    val panoramicRoofLightingEnabled: Boolean = false,
+    val interactionLightEnabled: Boolean = false,
+    val interactionLightBrightness: Float = 0.5f,
     val settings: List<AmbientLightSettingItem> = defaultAmbientSettings(),
 )
 

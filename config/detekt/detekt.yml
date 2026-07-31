@@ -33,8 +33,26 @@ naming:
 
 style:
   active: true
-  MagicNumber:
-    active: false
+    MagicNumber:
+    active: true
+    ignoreNumbers:
+      - '-1'
+      - '0'
+      - '1'
+      - '2'
+      - '0.0'
+      - '0.5'
+      - '1.0'
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+    ignoreLocalVariableDeclaration: false
+    ignoreConstantDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: true
+    ignoreNamedArgument: true
+    ignoreEnums: true
+    ignoreAnnotated:
+      - 'Composable'
   MaxLineLength:
     active: true
     maxLineLength: 160

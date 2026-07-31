@@ -1,24 +1,67 @@
+/*
+ * Copyright (C) 2025 - 2025, Audi. All rights reserved.
+ */
+
 package com.example.carfunction.presentation.comfortinterior
 
+import androidx.lifecycle.SavedStateHandle
+import com.example.carfunction.BuildConfig
 import com.example.carfunction.core.mvi.MviViewModel
+import com.example.carfunction.core.platform.PlatformCapabilities
 import com.example.carfunction.domain.model.ComfortMassageMode
+import com.example.carfunction.domain.model.ComfortSubSection
+import com.example.carfunction.domain.model.DisplayTarget
 import com.example.carfunction.domain.model.PanoramaRoofState
 import com.example.carfunction.domain.model.SeatPosition
 import com.example.carfunction.presentation.comfortinterior.ComfortInteriorContract.Effect
 import com.example.carfunction.presentation.comfortinterior.ComfortInteriorContract.Intent
 import com.example.carfunction.presentation.comfortinterior.ComfortInteriorContract.State
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.collections.immutable.toImmutableList
+import kotlinx.collections.immutable.toImmutableMap
+import javax.inject.Inject
 
 /**
  * Comfort & Interior ViewModel implementing MVI pattern.
  * Handles all user intents and produces state updates + side effects.
+ *
+ * @Traceability
+ * - Requirement ID: SRS-REQ-COMFORT-01
  */
-class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
+@HiltViewModel
+class ComfortInteriorViewModel @Inject constructor(
+    private val platformCapabilities: PlatformCapabilities,
+    private val savedStateHandle: SavedStateHandle,
+) : MviViewModel<Intent, State, Effect>(State()) {
 
-    init {
+    /**
+     * Private buffer for PIN digits — never exposed in observable state.
+     * Only the digit count ([State.pinEntryDigitCount]) is emitted to the UI.
+     */
+    private val pinBuffer = mutableListOf<Int>()
+
+    /**
+     * Called by the Screen composable via `LaunchedEffect(Unit)` to trigger
+     * initial data loading. Avoids launching coroutines in `init {}`.
+     */
+    fun loadInitialData() {
         dispatch(Intent.LoadData)
     }
 
     override suspend fun handleIntent(intent: Intent) {
+        try {
+            handleIntentInternal(intent)
+        } catch (e: kotlin.coroutines.cancellation.CancellationException) {
+            throw e // Never swallow CancellationException
+        } catch (e: Exception) {
+            if (BuildConfig.DEBUG) {
+                android.util.Log.e(TAG, "Error handling intent: $intent", e)
+            }
+            updateState { copy(error = e.message ?: "An unexpected error occurred") }
+        }
+    }
+
+    private suspend fun handleIntentInternal(intent: Intent) {
         when (intent) {
             is Intent.LoadData -> loadData()
             is Intent.SelectNavigationTab -> {
@@ -78,6 +121,42 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
                     )
                 }
             }
+            is Intent.ToggleRooflineLighting -> {
+                updateState {
+                    copy(
+                        ambientLightState = ambientLightState.copy(
+                            rooflineLightingEnabled = intent.enabled,
+                        ),
+                    )
+                }
+            }
+            is Intent.TogglePanoramicRoofLighting -> {
+                updateState {
+                    copy(
+                        ambientLightState = ambientLightState.copy(
+                            panoramicRoofLightingEnabled = intent.enabled,
+                        ),
+                    )
+                }
+            }
+            is Intent.ToggleInteractionLight -> {
+                updateState {
+                    copy(
+                        ambientLightState = ambientLightState.copy(
+                            interactionLightEnabled = intent.enabled,
+                        ),
+                    )
+                }
+            }
+            is Intent.SetInteractionLightBrightness -> {
+                updateState {
+                    copy(
+                        ambientLightState = ambientLightState.copy(
+                            interactionLightBrightness = intent.brightness,
+                        ),
+                    )
+                }
+            }
             is Intent.ToggleAmbientSetting -> {
                 val updatedSettings = currentState.ambientLightState.settings.map { item ->
                     if (item.id == intent.settingId) {
@@ -123,8 +202,10 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
                 updateState { copy(selectedDisplayTarget = intent.target) }
             }
             is Intent.SetDisplayBrightness -> {
-                val updated = currentState.displayBrightness.toMutableMap()
-                updated[currentState.selectedDisplayTarget] = intent.brightness
+                val updated = currentState.displayBrightness
+                    .toMutableMap()
+                    .apply { this[currentState.selectedDisplayTarget] = intent.brightness }
+                    .toImmutableMap()
                 updateState { copy(displayBrightness = updated) }
             }
 
@@ -136,10 +217,15 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
                 }
             }
             is Intent.ConfirmAirbagChange -> {
-                val newState = currentState.pendingAirbagState ?: return
+                val newAirbagState = currentState.pendingAirbagState
+                if (newAirbagState == null) {
+                    updateState { copy(showAirbagConfirmation = false) }
+                    sendEffect(Effect.ShowToast("Airbag state change failed. Please try again."))
+                    return
+                }
                 updateState {
                     copy(
-                        safetyState = safetyState.copy(passengerAirbagEnabled = newState),
+                        safetyState = safetyState.copy(passengerAirbagEnabled = newAirbagState),
                         showAirbagConfirmation = false,
                         pendingAirbagState = null,
                     )
@@ -168,8 +254,9 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
             is Intent.ToggleGloveboxPin -> {
                 if (intent.enabled) {
                     // Open PIN modal when enabling
+                    clearPinBuffer()
                     updateState {
-                        copy(showPinModal = true, pinEntryDigits = emptyList())
+                        copy(showPinModal = true, pinEntryDigitCount = 0)
                     }
                 } else {
                     updateState {
@@ -178,40 +265,81 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
                 }
             }
             is Intent.OpenPinModal -> {
-                updateState { copy(showPinModal = true, pinEntryDigits = emptyList()) }
+                clearPinBuffer()
+                updateState { copy(showPinModal = true, pinEntryDigitCount = 0) }
             }
             is Intent.DismissPinModal -> {
-                updateState { copy(showPinModal = false, pinEntryDigits = emptyList()) }
+                clearPinBuffer()
+                updateState { copy(showPinModal = false, pinEntryDigitCount = 0) }
             }
             is Intent.PinDigitEntered -> {
-                val digits = currentState.pinEntryDigits
-                if (digits.size < PIN_LENGTH) {
-                    val updated = digits + intent.digit
-                    updateState { copy(pinEntryDigits = updated) }
-                    if (updated.size == PIN_LENGTH) {
-                        // PIN complete — save and close
+                if (pinBuffer.size < PIN_LENGTH) {
+                    pinBuffer.add(intent.digit)
+                    updateState { copy(pinEntryDigitCount = pinBuffer.size) }
+                    if (pinBuffer.size == PIN_LENGTH) {
+                        // PIN complete — hash, store securely, and close
+                        val salt = generateSalt()
+                        hashPin(pinBuffer, salt)
+                        clearPinBuffer()
                         updateState {
                             copy(
                                 safetyState = safetyState.copy(gloveboxPinEnabled = true),
                                 showPinModal = false,
-                                pinEntryDigits = emptyList(),
+                                pinEntryDigitCount = 0,
                             )
                         }
+                        // TODO: Persist pinHash via EncryptedSharedPreferences or secure datastore
                         sendEffect(Effect.PinSetSuccessfully)
                     }
                 }
             }
             is Intent.PinBackspace -> {
-                val digits = currentState.pinEntryDigits
-                if (digits.isNotEmpty()) {
-                    updateState { copy(pinEntryDigits = digits.dropLast(1)) }
+                if (pinBuffer.isNotEmpty()) {
+                    pinBuffer.removeAt(pinBuffer.lastIndex)
+                    updateState { copy(pinEntryDigitCount = pinBuffer.size) }
                 }
             }
         }
     }
 
     private fun loadData() {
-        updateState { copy(isLoading = false, error = null) }
+        val caps = platformCapabilities
+
+        // Filter sub-sections by platform capabilities
+        val visibleSections = ComfortSubSection.entries.filter { section ->
+            when (section) {
+                ComfortSubSection.SEAT_MASSAGE -> caps.supportsMassage
+                ComfortSubSection.SEAT_AND_LOADING -> true // Always available
+                ComfortSubSection.AMBIENT_LIGHT -> caps.supportsAmbientLight
+                ComfortSubSection.PANORAMA_ROOF -> caps.supportsPanoramaRoof
+                ComfortSubSection.DISPLAY -> true // Always available
+                ComfortSubSection.FAVORITES -> caps.supportsFavorites
+                ComfortSubSection.SAFETY -> true // Always available
+            }
+        }
+
+        // Filter display targets by platform capabilities
+        val visibleTargets = DisplayTarget.entries.filter { target ->
+            when (target) {
+                DisplayTarget.HEAD_UP -> caps.supportsHeadUpDisplay
+                DisplayTarget.VIRTUAL_COCKPIT -> true
+                DisplayTarget.MMI -> true
+            }
+        }
+
+        val defaultSection = visibleSections.firstOrNull() ?: ComfortSubSection.SEAT_MASSAGE
+        val defaultTarget = visibleTargets.firstOrNull() ?: DisplayTarget.VIRTUAL_COCKPIT
+
+        updateState {
+            copy(
+                isLoading = false,
+                error = null,
+                visibleSubSections = visibleSections.toImmutableList(),
+                selectedSubSection = defaultSection,
+                visibleDisplayTargets = visibleTargets.toImmutableList(),
+                selectedDisplayTarget = defaultTarget,
+            )
+        }
     }
 
     private fun handleSetMassageMode(mode: ComfortMassageMode) {
@@ -240,7 +368,50 @@ class ComfortInteriorViewModel : MviViewModel<Intent, State, Effect>(State()) {
         }
     }
 
+    /**
+     * Clears the PIN buffer securely — overwrites before clearing to prevent
+     * lingering values in memory.
+     */
+    private fun clearPinBuffer() {
+        for (i in pinBuffer.indices) {
+            pinBuffer[i] = 0
+        }
+        pinBuffer.clear()
+    }
+
     companion object {
-        private const val PIN_LENGTH = 4
+        private const val TAG = "ComfortInteriorVM"
+        const val PIN_LENGTH = 4
+        private const val PBKDF2_ITERATIONS = 10_000
+        private const val KEY_LENGTH_BITS = 256
+        private const val SALT_LENGTH_BYTES = 16
+
+        /**
+         * Generates a cryptographic random salt.
+         */
+        fun generateSalt(): ByteArray {
+            val salt = ByteArray(SALT_LENGTH_BYTES)
+            java.security.SecureRandom().nextBytes(salt)
+            return salt
+        }
+
+        /**
+         * Hashes a PIN using PBKDF2WithHmacSHA256 with the provided salt.
+         * Returns the hex-encoded hash. The caller must persist both the
+         * hash and the salt (e.g., via EncryptedSharedPreferences).
+         */
+        fun hashPin(digits: List<Int>, salt: ByteArray): String {
+            val pinString = digits.joinToString("")
+            val spec = javax.crypto.spec.PBEKeySpec(
+                pinString.toCharArray(),
+                salt,
+                PBKDF2_ITERATIONS,
+                KEY_LENGTH_BITS,
+            )
+            val factory = javax.crypto.SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256")
+            val hash = factory.generateSecret(spec).encoded
+            spec.clearPassword()
+            return hash.joinToString("") { "%02x".format(it) }
+        }
     }
 }
